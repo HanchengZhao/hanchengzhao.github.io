@@ -7,40 +7,32 @@
     </url>
 
     <url>
+        <loc>http://yoursite-url/2017/11/18/Cloud-Based-Web-Tools-For-VIP/</loc>
+        <lastmod>2017-12-19T02:18:34.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://yoursite-url/2017/05/22/Python-Collections-And-Tricks/</loc>
+        <lastmod>2017-12-19T02:08:01.543Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://yoursite-url/2017/02/07/JavaScript-Flaws/</loc>
+        <lastmod>2017-12-19T02:01:09.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://yoursite-url/2017/05/27/To-My-Graduation/</loc>
-        <lastmod>2017-12-16T21:23:14.887Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://yoursite-url/2017/03/18/hexo-theme-beantech/</loc>
-        <lastmod>2017-12-16T21:20:15.784Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://yoursite-url/2016/11/17/2016-11-17-CSS-Projects/</loc>
-        <lastmod>2017-04-24T14:58:06.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://yoursite-url/2016/12/08/2016-12-8-Markovian-Chain/</loc>
-        <lastmod>2016-12-11T16:48:45.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://yoursite-url/2016/12/10/2016-12-10-gee-mail/</loc>
-        <lastmod>2016-12-11T04:36:57.000Z</lastmod>
+        <lastmod>2017-12-19T01:50:20.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

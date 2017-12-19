@@ -2,22 +2,43 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
-        <loc>http://yoursite-url/tags/regular/</loc>
-        <lastmod>2016-12-11T16:48:45.000Z</lastmod>
+        <loc>http://yoursite-url/tags/Thoughts/</loc>
+        <lastmod>2017-12-19T01:50:20.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://yoursite-url/tags/Hexo/</loc>
-        <lastmod>2017-12-16T21:20:15.784Z</lastmod>
+        <loc>http://yoursite-url/tags/JavaScript/</loc>
+        <lastmod>2017-12-19T02:01:09.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://yoursite-url/tags/Blog/</loc>
-        <lastmod>2017-12-16T21:20:15.784Z</lastmod>
+        <loc>http://yoursite-url/tags/python/</loc>
+        <lastmod>2017-12-19T02:08:01.543Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite-url/tags/Cloud/</loc>
+        <lastmod>2017-12-19T02:18:34.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite-url/tags/Reactjs/</loc>
+        <lastmod>2017-12-19T02:18:34.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite-url/tags/Firebase/</loc>
+        <lastmod>2017-12-19T02:18:34.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
