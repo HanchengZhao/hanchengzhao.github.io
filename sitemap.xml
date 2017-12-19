@@ -2,22 +2,22 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <sitemap>
-        <loc>http://yoursite-url/post-sitemap.xml</loc>
+        <loc>http://hzhao.me/post-sitemap.xml</loc>
         <lastmod>2017-12-19T02:18:34.000Z</lastmod>
     </sitemap>
 
     <sitemap>
-        <loc>http://yoursite-url/page-sitemap.xml</loc>
+        <loc>http://hzhao.me/page-sitemap.xml</loc>
         <lastmod>2017-12-18T05:09:03.818Z</lastmod>
     </sitemap>
 
     <sitemap>
-        <loc>http://yoursite-url/category-sitemap.xml</loc>
+        <loc>http://hzhao.me/category-sitemap.xml</loc>
         <lastmod>2017-12-19T02:18:34.000Z</lastmod>
     </sitemap>
 
     <sitemap>
-        <loc>http://yoursite-url/tag-sitemap.xml</loc>
+        <loc>http://hzhao.me/tag-sitemap.xml</loc>
         <lastmod>2017-12-19T01:50:20.000Z</lastmod>
     </sitemap>
 
