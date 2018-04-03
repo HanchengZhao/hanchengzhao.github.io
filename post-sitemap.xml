@@ -7,6 +7,14 @@
     </url>
 
     <url>
+        <loc>http://hzhao.me/2018/04/02/Interesting-Software-Names/</loc>
+        <lastmod>2018-04-03T03:30:42.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://hzhao.me/2018/03/08/react-global-state-management/</loc>
         <lastmod>2018-03-09T05:09:32.959Z</lastmod>
         <changefreq>weekly</changefreq>
