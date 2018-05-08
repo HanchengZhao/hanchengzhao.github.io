@@ -94,7 +94,14 @@
 
     <url>
         <loc>http://hzhao.me/tags/React-js/</loc>
-        <lastmod>2018-04-03T03:30:42.000Z</lastmod>
+        <lastmod>2018-05-08T03:12:14.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://hzhao.me/tags/D3-js/</loc>
+        <lastmod>2018-05-08T03:12:14.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
