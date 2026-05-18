@@ -65,7 +65,14 @@
     </url>
 
     <url>
-        <loc>http://hzhao.me/tags/Cloud/</loc>
+        <loc>http://hzhao.me/tags/Kubernetes/</loc>
+        <lastmod>2025-08-03T06:03:54.248Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://hzhao.me/tags/Docker/</loc>
         <lastmod>2025-08-03T06:03:54.248Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -79,14 +86,7 @@
     </url>
 
     <url>
-        <loc>http://hzhao.me/tags/Kubernetes/</loc>
-        <lastmod>2025-08-03T06:03:54.248Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://hzhao.me/tags/Docker/</loc>
+        <loc>http://hzhao.me/tags/Cloud/</loc>
         <lastmod>2025-08-03T06:03:54.248Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
