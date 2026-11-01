@@ -2,6 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>行前历史文化预览 — 巴黎 · 尼斯 · 罗马 · 佛罗伦萨 · 米兰</title>
 <style>
   @page { size: Letter; margin: 12mm 12mm; }
@@ -101,6 +102,31 @@
   .cand p { font-size:8.2pt; margin:2px 0; line-height:1.5; }
   .cand .win { color:#4f6b4f; }
   @media print { #lb { display:none !important; } .pc img { cursor:auto; } }
+
+  @media screen and (max-width: 760px) {
+    body { font-size: 15px; line-height: 1.68; }
+    h1 { font-size: 25px; }
+    h2 { font-size: 20px; margin-top: 30px; }
+    .sub { font-size: 12.5px; }
+    .howto, .lede, .takeaway, .mapnote, .outside { font-size: 13.5px; line-height: 1.7; }
+    .maprow { flex-direction: column; gap: 8px; }
+    .mapbox { flex: 1 1 auto; width: 100%; }
+    .maplegend { column-count: 3; column-gap: 12px; font-size: 13px; line-height: 1.9; }
+    .site { flex-direction: column; gap: 10px; }
+    .pc { flex: 1 1 auto; width: 100%; }
+    .pc img { max-height: none; }
+    .tx .cn { font-size: 19px; }
+    .tx .nm { font-size: 13px; }
+    .tx .yr { font-size: 12px; }
+    .tx .lead { font-size: 15px; }
+    .tx p { font-size: 14.5px; line-height: 1.72; }
+    .cand .cn2 { font-size: 16px; }
+    .cand .nm2, .cand .yr2 { font-size: 12.5px; }
+    .cand p { font-size: 14px; }
+    .timeline td { font-size: 13px; padding: 7px 6px; }
+    .cand, .site { page-break-inside: auto; }
+  }
+
 </style>
 </head>
 <body>
