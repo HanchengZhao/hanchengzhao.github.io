@@ -105,8 +105,22 @@
   @media print { #lb { display:none !important; } .pc img { cursor:auto; } }
 
   /* ---------- screen only: a paper sheet with margins ---------- */
+  .topnav { display:none; }
+
   @media screen {
     html { background:#e8e1d8; }
+    .topnav { display:flex; position:sticky; top:0; z-index:60; align-items:center; gap:2px;
+              margin:-60px -56px 30px; padding:13px 56px;
+              background:rgba(255,253,250,.92);
+              -webkit-backdrop-filter:blur(12px) saturate(1.1);
+              backdrop-filter:blur(12px) saturate(1.1);
+              border-bottom:1px solid #ece2d9; font-size:13.5px; }
+    .topnav .navlabel { color:#a08b7d; letter-spacing:.18em; font-size:10.5px;
+                        text-transform:uppercase; margin-right:10px; }
+    .topnav a { color:#5c4a3f; text-decoration:none; padding:5px 12px; border-radius:999px;
+                white-space:nowrap; transition:background .15s ease, color .15s ease; }
+    .topnav a:hover { background:#f4eae3; color:#8a3f2c; }
+    .topnav a.on { background:#6b3a2e; color:#fff; }
     body { max-width:920px; margin:44px auto 64px; padding:60px 56px 74px;
            background:#fffdfa; border-radius:5px;
            box-shadow:0 2px 4px rgba(70,45,30,.05), 0 18px 46px rgba(70,45,30,.09);
@@ -116,7 +130,7 @@
          font-weight:600; }
     .sub { font-size:12.5px; letter-spacing:.14em; color:#8d7b6f;
            margin:0 0 30px; padding-bottom:20px; border-bottom:1px solid #e8ded6; }
-    h2 { font-size:23px; line-height:1.35; margin:52px 0 12px; padding-bottom:10px;
+    h2 { scroll-margin-top:78px; font-size:23px; line-height:1.35; margin:52px 0 12px; padding-bottom:10px;
          border-bottom:1px solid #e6d7cd; color:#6b3a2e;
          font-family:"Songti SC","Source Han Serif SC","Noto Serif CJK SC",Georgia,serif;
          letter-spacing:.02em; }
@@ -150,6 +164,12 @@
 
   @media screen and (max-width: 760px) {
     html { background:#fffdfa; }
+    .topnav { margin:-26px -20px 20px; padding:10px 14px; gap:1px; overflow-x:auto;
+              -webkit-overflow-scrolling:touch; scrollbar-width:none; }
+    .topnav::-webkit-scrollbar { display:none; }
+    .topnav .navlabel { display:none; }
+    .topnav a { padding:6px 11px; font-size:13.5px; }
+    h2 { scroll-margin-top:64px; }
     body { max-width:none; margin:0; padding:26px 20px 56px; border-radius:0;
            box-shadow:none; background:#fffdfa; }
     body { font-size: 15px; line-height: 1.68; }
@@ -181,6 +201,16 @@
 </head>
 <body>
 
+<nav class="topnav" id="topnav">
+  <span class="navlabel">目录</span>
+  <a href="#paris">巴黎</a>
+  <a href="#nice">尼斯</a>
+  <a href="#rome">罗马</a>
+  <a href="#florence">佛罗伦萨</a>
+  <a href="#milan">米兰</a>
+  <a href="#timeline">时间轴</a>
+</nav>
+
 <h1>行前历史文化预览</h1>
 <p class="sub"><span>巴黎 · 尼斯 · 罗马 · 佛罗伦萨 · 米兰</span><span>2026 年 11 月 15 – 27 日</span><span>写给恩雅</span></p>
 
@@ -194,7 +224,7 @@
   </ul>
 </div>
 
-<h2>一、巴黎 <span class="en">PARIS · 两千年的层叠</span></h2>
+<h2 id="paris">一、巴黎 <span class="en">PARIS · 两千年的层叠</span></h2>
 <p class="lede">巴黎不是"一座古城"，而是好几座城市叠在一起。左岸的拉丁区下面埋着罗马人的卢泰西亚（Lutetia，公元前 52 年被凯撒征服）；
 西岱岛上长出哥特式的大教堂；十七世纪路易十四把宫廷搬去凡尔赛（Versailles），巴黎反而成了思想与艺术的首都；
 1789 年革命在这里砍下国王的头；1853 年豪斯曼男爵（Baron Haussmann）用二十年把中世纪街巷推平，
@@ -414,7 +444,7 @@
   </div>
 </div></div>
 
-<h2>二、尼斯 · 蔚蓝海岸 <span class="en">NICE · 从希腊殖民地到法国</span></h2>
+<h2 id="nice">二、尼斯 · 蔚蓝海岸 <span class="en">NICE · 从希腊殖民地到法国</span></h2>
 <p class="lede">尼斯比法国古老得多。公元前四世纪左右，来自马赛的希腊人在这里建立贸易站，取名尼卡亚（Nikaia，胜利女神）。
 此后它先后属于罗马、普罗旺斯伯爵、萨伏依公国（Savoie）—— 从 1388 到 1860 年，尼斯是意大利的领土，不是法国的。
 十八世纪英国贵族来此过冬，修了海滨步道；1860 年萨伏依把它割让给法国，换取军事支持。
@@ -551,7 +581,7 @@
   </div>
 </div></div>
 
-<h2>三、罗马 <span class="en">ROME · 三层城市</span></h2>
+<h2 id="rome">三、罗马 <span class="en">ROME · 三层城市</span></h2>
 <p class="lede">罗马是三座城市叠在一起：古罗马（共和国与帝国）、基督教罗马（教廷与巴洛克）、现代意大利首都。
 公元前 509 年建立共和国，公元前 27 年成为帝国，公元 476 年西罗马灭亡 —— 之后是教皇的城，直到 1870 年才成为统一的意大利的首都。
 关键的时间感：你 11/22 上午在斗兽场（公元 80 年），下午在万神殿（公元 125 年），晚上在特雷维喷泉（1762 年）—— 一天走过一千七百年。</p>
@@ -735,7 +765,7 @@
   </div>
 </div></div>
 
-<h2>四、佛罗伦萨 <span class="en">FLORENCE · 文艺复兴的诞生地</span></h2>
+<h2 id="florence">四、佛罗伦萨 <span class="en">FLORENCE · 文艺复兴的诞生地</span></h2>
 <p class="lede">佛罗伦萨在十四到十六世纪只有五六万人口，却重新发明了西方艺术的观看方式。
 美第奇家族（Medici）用银行赚来的钱资助艺术家，布鲁内莱斯基算出透视法，马萨乔第一个把"空气"画进画面，
 米开朗基罗二十六岁雕出大卫。文艺复兴的核心不是"复古"，而是"人"第一次成为尺度 ——
@@ -852,7 +882,7 @@
   </div>
 </div></div>
 
-<h2>五、米兰 <span class="en">MILAN · 权力、金钱与最后的晚餐</span></h2>
+<h2 id="milan">五、米兰 <span class="en">MILAN · 权力、金钱与最后的晚餐</span></h2>
 <p class="lede">米兰在罗马时代叫 Mediolanum，曾是西罗马帝国的首都之一。中世纪它是维斯孔蒂家族（Visconti）的领地，
 十五世纪被斯福尔扎家族（Sforza）接手 —— 达·芬奇和布拉曼特就是被斯福尔扎公爵请来的。
 之后被西班牙、奥地利统治近三百年，1861 年才并入意大利。
@@ -964,7 +994,7 @@
   </div>
 </div></div>
 
-<h2 style="page-break-before: always; margin-top: 0;">六、一条总时间轴 <span class="en">THE WHOLE PICTURE</span></h2>
+<h2 id="timeline" style="page-break-before: always; margin-top: 0;">六、一条总时间轴 <span class="en">THE WHOLE PICTURE</span></h2>
 <table class="timeline">
 <tr><td class="yr">公元前 52</td><td>凯撒征服高卢，巴黎成为罗马的卢泰西亚</td><td class="wh">拉丁区地下</td></tr>
 <tr><td class="yr">公元前 350</td><td>希腊人在尼斯建尼卡亚 Nikaia</td><td class="wh">城堡山</td></tr>
@@ -1009,6 +1039,34 @@
     } else if(t===lb||t===im){ lb.classList.remove('on'); }
   });
   document.addEventListener('keydown',function(e){ if(e.key==='Escape') lb.classList.remove('on'); });
+
+  var nav=document.getElementById('topnav');
+  if(nav){
+    var links=[].slice.call(nav.querySelectorAll('a[href^="#"]'));
+    var items=links.map(function(a){ return document.querySelector(a.getAttribute('href')); });
+    function setActive(){
+      var y=window.scrollY+140, best=-1;
+      items.forEach(function(el,i){
+        if(!el) return;
+        var top=el.getBoundingClientRect().top+window.scrollY;
+        if(top<=y && i>best) best=i;
+      });
+      links.forEach(function(a,i){ a.classList.toggle('on', i===best && best>-1); });
+    }
+    window.addEventListener('scroll',setActive,{passive:true});
+    window.addEventListener('resize',setActive);
+    setActive();
+    links.forEach(function(a){
+      a.addEventListener('click',function(e){
+        var el=document.querySelector(a.getAttribute('href'));
+        if(!el) return;
+        e.preventDefault();
+        el.scrollIntoView({behavior:'smooth',block:'start'});
+        if(history.replaceState) history.replaceState(null,'',a.getAttribute('href'));
+        setActive();
+      });
+    });
+  }
 
   document.querySelectorAll('.mapunit').forEach(function(u){
     var svg=u.querySelector('svg.cm');
