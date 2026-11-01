@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>行前历史文化预览 — 巴黎 · 尼斯 · 罗马 · 佛罗伦萨 · 米兰</title>
+<style>
+  @page { size: Letter; margin: 12mm 12mm; }
+  * { box-sizing: border-box; }
+  body { font-family: "PingFang SC","Hiragino Sans GB","Heiti SC","Microsoft YaHei",
+         "Helvetica Neue",Helvetica,Arial,sans-serif;
+         font-size: 9pt; line-height: 1.5; color: #1a1a1a; margin: 0; }
+  h1 { font-size: 17pt; letter-spacing: .4px; margin: 0 0 3px; color: #6b3a2e; }
+  .sub { font-size: 8.8pt; color: #777; margin: 0 0 12px; letter-spacing: .3px; }
+  h2 { font-size: 13pt; color: #6b3a2e; margin: 24px 0 3px; padding-bottom: 4px;
+       border-bottom: 2px solid #c9a99a; page-break-after: avoid; }
+  h2 .en { font-size: 8.8pt; color: #999; font-weight: 400; letter-spacing: .5px; }
+  .lede { font-size: 9pt; color: #333; margin: 8px 0 10px; padding-left: 10px;
+          border-left: 3px solid #d8c3b8; line-height: 1.62; page-break-after: avoid; }
+  .howto { border: 1px solid #ddcec5; background: #fdfbfa; padding: 8px 12px;
+           font-size: 8.6pt; color: #444; margin-bottom: 4px; }
+  .howto ul { margin: 4px 0 0; padding-left: 16px; }
+  .howto li { margin-bottom: 2px; }
+  .site { display: flex; gap: 11px; padding: 10px 0; border-bottom: 1px solid #ece3dd;
+          page-break-inside: avoid; }
+  .site:last-of-type { border-bottom: none; }
+  .pc { flex: 0 0 24%; }
+  .pc img { display: block; width: 100%; max-height: 132px; object-fit: contain;
+            border: 1px solid #e2d5cc; background: #f7f3f0; border-radius: 2px; }
+  .tx { flex: 1; min-width: 0; }
+  .tx .cn { font-size: 10.4pt; font-weight: 700; color: #6b3a2e; }
+  .tx .nm { font-size: 8.3pt; color: #4f4f4f; }
+  .tx .nm i { color: #9a7060; }
+  .tx .yr { font-size: 7.8pt; color: #999; letter-spacing: .4px; margin: 2px 0 5px; }
+  .tx .lead { font-size: 9pt; color: #3a3a3a; margin: 0 0 5px; padding-left: 8px;
+              border-left: 2px solid #dcc6b9; }
+  .tx p { font-size: 8.7pt; line-height: 1.55; margin: 0 0 4px; text-align: justify; }
+  .lbl { color: #8a5a45; font-weight: 700; }
+  .takeaway { margin: 10px 0 0; padding: 8px 11px; background: #f4f7f4;
+              border-left: 3px solid #7a9b7a; font-size: 8.8pt; color: #2d4a2d; }
+  .takeaway b { color: #3d6b3d; }
+  .timeline { width: 100%; border-collapse: collapse; margin-top: 8px; }
+  .timeline td { padding: 3.5px 7px; border-bottom: 1px solid #ece3dd;
+                 font-size: 8.5pt; vertical-align: top; }
+  .timeline td.yr { width: 15%; font-weight: 700; color: #6b3a2e; white-space: nowrap; }
+  .timeline td.wh { width: 40%; color: #666; }
+  .foot { margin-top: 14px; font-size: 7.6pt; color: #888; border-top: 1px solid #e8e0db;
+          padding-top: 6px; }
+  #lb { display:none; position:fixed; inset:0; background:rgba(18,13,11,.93); z-index:9999;
+        align-items:center; justify-content:center; flex-direction:column; padding:26px; cursor:zoom-out; }
+  #lb.on { display:flex; }
+  #lb img { max-width:90vw; max-height:74vh; border:1px solid rgba(255,255,255,.22);
+            box-shadow:0 10px 48px rgba(0,0,0,.65); background:#1a1411; }
+  #lb .cap { color:#efe4dc; font-size:11.5pt; margin-top:14px; text-align:center; line-height:1.55; }
+  #lb .cap b { font-size:13pt; color:#fff; }
+  #lb .hint { color:#8d7b71; font-size:8.5pt; margin-top:8px; letter-spacing:.3px; }
+  .pc img { cursor: zoom-in; }
+  .pc .mp { display:block; width:100%; height:auto; margin-top:4px; border:1px solid #e6dbd4;
+            border-radius:2px; }
+  .where { font-size:6.8pt; color:#8d7a6e; margin-top:3px; line-height:1.35; }
+  .cands { margin:13px 0 0; padding:9px 11px 5px; background:#fbf8f6;
+           border:1px dashed #d8c3b8; page-break-inside:avoid; }
+  .cands h4 { margin:0 0 2px; font-size:9.4pt; color:#6b3a2e; letter-spacing:.3px; }
+  .cands .note { font-size:7.6pt; color:#8a7a70; margin:0 0 7px; }
+  .cand { display:flex; gap:9px; padding:6px 0; border-top:1px solid #eee2da;
+          page-break-inside:avoid; }
+  .maprow { display:flex; gap:12px; margin:10px 0 5px; align-items:flex-start;
+            page-break-inside:avoid; }
+  .mapbox { flex:0 0 48%; }
+  .mapunit + .mapunit { margin-top:6px; }
+  .mapbox svg { display:block; width:100%; height:auto; border:1px solid #e2d5cc; border-radius:2px; }
+  .maplegend { flex:1; font-size:7.8pt; line-height:1.66; column-count:2; column-gap:9px; }
+  .maplegend > div { break-inside:avoid; color:#4a4a4a; white-space:nowrap; overflow:hidden; }
+  .maplegend .badge { min-width:13px; height:13px; line-height:13px; font-size:6.8pt;
+                      margin-right:3px; }
+  .outside { font-size:7.7pt; color:#6d5b50; margin:2px 0 10px; line-height:1.55; }
+  .outside .badge { min-width:13px; height:13px; line-height:13px; font-size:6.8pt; margin-right:3px; }
+  .maplegend .lg { cursor:pointer; border-radius:3px; padding:0 2px; }
+  .maplegend .lg.hl { background:#f7e7e1; }
+  .cm .pin { cursor:pointer; }
+  .cm .pin text { pointer-events:none; }
+  .cm .pin { transition:opacity .12s linear; }
+  .cm.dim .pin { opacity:.20; }
+  .cm.dim .pin.hl { opacity:1; }
+  .cm .pin.hl .halo { opacity:.26; }
+  .site.flash { background:#fbefe9; transition:background .5s ease; }
+  .mapnote { font-size:7.7pt; color:#8a7a70; margin:0 0 10px; line-height:1.45; }
+  .badge { display:inline-block; min-width:15px; height:15px; padding:0 3px; border-radius:8px;
+           background:#b4573f; color:#fff; font-size:7.3pt; text-align:center; line-height:15px;
+           margin-right:5px; vertical-align:1.5px; font-weight:700; }
+  .badge.c { background:#fff; color:#a8543c; border:1px solid #c9a99a; line-height:13px; }
+  .cand .pc2 { flex:0 0 17%; }
+  .cand .pc2 img { display:block; width:100%; max-height:72px; object-fit:contain;
+                   border:1px solid #e2d5cc; background:#fff; border-radius:2px; }
+  .cand .pc2 .mp { display:block; width:100%; height:auto; margin-top:3px;
+                   border:1px solid #e6dbd4; border-radius:2px; }
+  .cand .tx2 { flex:1; min-width:0; }
+  .cand .cn2 { font-size:9.2pt; font-weight:700; color:#6b3a2e; }
+  .cand .nm2 { font-size:7.5pt; color:#5a5a5a; }
+  .cand .nm2 i { color:#9a7060; }
+  .cand .yr2 { font-size:7pt; color:#a09088; letter-spacing:.3px; }
+  .cand p { font-size:8.2pt; margin:2px 0; line-height:1.5; }
+  .cand .win { color:#4f6b4f; }
+  @media print { #lb { display:none !important; } .pc img { cursor:auto; } }
+</style>
+</head>
+<body>
+
+<h1>行前历史文化预览</h1>
+<p class="sub">巴黎 · 尼斯 · 罗马 · 佛罗伦萨 · 米兰 &nbsp;|&nbsp; 2026 年 11 月 15 – 27 日 &nbsp;|&nbsp; 写给恩雅</p>
+
+<div class="howto">
+  <b>怎么用这份文件</b>
+  <ul>
+    <li><b>每个景点四段</b>：一句话概括 · 它是怎么来的 · 为什么留到今天 · 一段历史。</li>
+    <li><b>三种名字</b>：中文 · English · 当地语言（法国是法文，意大利是意大利文）—— 用来对照路牌、门票和地图。</li>
+    <li><b>每座城市一张真实地图</b>（OpenStreetMap 底图，已淡化）；巴黎和尼斯各多一张区域图，把凡尔赛、埃兹、摩纳哥这些"城外"的点也收进来。红点＝行程内，红圈＝备选，右边是编号对照表。</li>
+    <li><b>用浏览器打开时可以点照片放大</b>，按 Esc 关闭；PDF 版不支持。</li>
+  </ul>
+</div>
+
+<h2>一、巴黎 <span class="en">PARIS · 两千年的层叠</span></h2>
+<p class="lede">巴黎不是"一座古城"，而是好几座城市叠在一起。左岸的拉丁区下面埋着罗马人的卢泰西亚（Lutetia，公元前 52 年被凯撒征服）；
+西岱岛上长出哥特式的大教堂；十七世纪路易十四把宫廷搬去凡尔赛（Versailles），巴黎反而成了思想与艺术的首都；
+1789 年革命在这里砍下国王的头；1853 年豪斯曼男爵（Baron Haussmann）用二十年把中世纪街巷推平，
+换成今天你看到的林荫大道和统一的米色石灰岩立面。所以你走在巴黎，脚下是罗马，眼前是十九世纪，脑子里是十八世纪。</p>
+<div class="mapunit"><div class="maprow"><div class="mapbox"><svg class="cm" viewBox="46.6 71.9 811.9 922.9" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet"><rect x="0" y="0" width="1024" height="1024" fill="#f1ece6"/><image x="0" y="0" width="256" height="256" href="images/tiles/paris/14_8296_5634.png"/><image x="0" y="256" width="256" height="256" href="images/tiles/paris/14_8296_5635.png"/><image x="0" y="512" width="256" height="256" href="images/tiles/paris/14_8296_5636.png"/><image x="0" y="768" width="256" height="256" href="images/tiles/paris/14_8296_5637.png"/><image x="256" y="0" width="256" height="256" href="images/tiles/paris/14_8297_5634.png"/><image x="256" y="256" width="256" height="256" href="images/tiles/paris/14_8297_5635.png"/><image x="256" y="512" width="256" height="256" href="images/tiles/paris/14_8297_5636.png"/><image x="256" y="768" width="256" height="256" href="images/tiles/paris/14_8297_5637.png"/><image x="512" y="0" width="256" height="256" href="images/tiles/paris/14_8298_5634.png"/><image x="512" y="256" width="256" height="256" href="images/tiles/paris/14_8298_5635.png"/><image x="512" y="512" width="256" height="256" href="images/tiles/paris/14_8298_5636.png"/><image x="512" y="768" width="256" height="256" href="images/tiles/paris/14_8298_5637.png"/><image x="768" y="0" width="256" height="256" href="images/tiles/paris/14_8299_5634.png"/><image x="768" y="256" width="256" height="256" href="images/tiles/paris/14_8299_5635.png"/><image x="768" y="512" width="256" height="256" href="images/tiles/paris/14_8299_5636.png"/><image x="768" y="768" width="256" height="256" href="images/tiles/paris/14_8299_5637.png"/><rect x="0" y="0" width="1024" height="1024" fill="#ffffff" opacity="0.58"/><g class="pin" data-num="1" data-name="埃菲尔铁塔"><circle class="halo" cx="108.9" cy="623.8" r="38.9" fill="#b4573f" opacity="0"/><circle cx="108.9" cy="623.8" r="18.5" fill="#b4573f" stroke="#ffffff" stroke-width="3.9"/><text x="108.9" y="630.2" font-size="17.7" fill="#ffffff" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">1</text></g><g class="pin" data-num="2" data-name="圣礼拜堂"><circle class="halo" cx="697.2" cy="677.0" r="38.9" fill="#b4573f" opacity="0"/><circle cx="697.2" cy="677.0" r="18.5" fill="#b4573f" stroke="#ffffff" stroke-width="3.9"/><text x="697.2" y="683.3" font-size="17.7" fill="#ffffff" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">2</text></g><g class="pin" data-num="3" data-name="巴黎圣母院"><circle class="halo" cx="754.3" cy="719.5" r="38.9" fill="#b4573f" opacity="0"/><circle cx="754.3" cy="719.5" r="18.5" fill="#b4573f" stroke="#ffffff" stroke-width="3.9"/><text x="754.3" y="725.8" font-size="17.7" fill="#ffffff" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">3</text></g><g class="pin" data-num="4" data-name="克吕尼浴场"><circle class="halo" cx="687.9" cy="761.9" r="38.9" fill="#b4573f" opacity="0"/><circle cx="687.9" cy="761.9" r="18.5" fill="#b4573f" stroke="#ffffff" stroke-width="3.9"/><text x="687.9" y="768.3" font-size="17.7" fill="#ffffff" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">4</text></g><g class="pin" data-num="5" data-name="先贤祠"><circle class="halo" cx="713.5" cy="839.9" r="38.9" fill="#b4573f" opacity="0"/><circle cx="713.5" cy="839.9" r="18.5" fill="#b4573f" stroke="#ffffff" stroke-width="3.9"/><text x="713.5" y="846.2" font-size="17.7" fill="#ffffff" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">5</text></g><g class="pin" data-num="6" data-name="圣心堂"><circle class="halo" cx="675.1" cy="122.5" r="38.9" fill="#b4573f" opacity="0"/><circle cx="675.1" cy="122.5" r="18.5" fill="#b4573f" stroke="#ffffff" stroke-width="3.9"/><text x="675.1" y="128.9" font-size="17.7" fill="#ffffff" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">6</text></g><g class="pin" data-num="7" data-name="奥赛美术馆"><circle class="halo" cx="482.9" cy="595.5" r="38.9" fill="#b4573f" opacity="0"/><circle cx="482.9" cy="595.5" r="18.5" fill="#b4573f" stroke="#ffffff" stroke-width="3.9"/><text x="482.9" y="601.9" font-size="17.7" fill="#ffffff" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">7</text></g><g class="pin" data-num="8" data-name="凯旋门"><circle class="halo" cx="114.7" cy="351.1" r="38.9" fill="#b4573f" opacity="0"/><circle cx="114.7" cy="351.1" r="18.5" fill="#b4573f" stroke="#ffffff" stroke-width="3.9"/><text x="114.7" y="357.5" font-size="17.7" fill="#ffffff" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">8</text></g><g class="pin" data-num="9" data-name="卢浮宫"><circle class="halo" cx="611.0" cy="584.9" r="38.9" fill="#b4573f" opacity="0"/><circle cx="611.0" cy="584.9" r="18.5" fill="#b4573f" stroke="#ffffff" stroke-width="3.9"/><text x="611.0" y="591.3" font-size="17.7" fill="#ffffff" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">9</text></g><g class="pin" data-num="10" data-name="橘园"><circle class="halo" cx="436.3" cy="528.2" r="38.9" fill="#b4573f" opacity="0"/><circle cx="436.3" cy="528.2" r="18.5" fill="#b4573f" stroke="#ffffff" stroke-width="3.9"/><text x="436.3" y="533.7" font-size="15.4" fill="#ffffff" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">10</text></g><g class="pin" data-num="11" data-name="协和广场"><circle class="halo" cx="419.9" cy="496.3" r="38.9" fill="#b4573f" opacity="0"/><circle cx="419.9" cy="496.3" r="18.5" fill="#b4573f" stroke="#ffffff" stroke-width="3.9"/><text x="419.9" y="501.9" font-size="15.4" fill="#ffffff" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">11</text></g><g class="pin" data-num="12" data-name="旺多姆广场"><circle class="halo" cx="515.5" cy="460.9" r="38.9" fill="#b4573f" opacity="0"/><circle cx="515.5" cy="460.9" r="18.5" fill="#b4573f" stroke="#ffffff" stroke-width="3.9"/><text x="515.5" y="466.4" font-size="15.4" fill="#ffffff" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">12</text></g><g class="pin" data-num="14" data-name="亚历山大三世桥"><circle class="halo" cx="330.2" cy="530.0" r="33.9" fill="#b4573f" opacity="0"/><circle cx="330.2" cy="530.0" r="16.1" fill="#ffffff" stroke="#b4573f" stroke-width="3.9"/><text x="330.2" y="535.5" font-size="15.4" fill="#b4573f" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">14</text></g><g class="pin" data-num="15" data-name="罗丹美术馆"><circle class="halo" cx="358.2" cy="678.7" r="33.9" fill="#b4573f" opacity="0"/><circle cx="358.2" cy="678.7" r="16.1" fill="#ffffff" stroke="#b4573f" stroke-width="3.9"/><text x="358.2" y="684.3" font-size="15.4" fill="#b4573f" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">15</text></g><g class="pin" data-num="16" data-name="荣军院"><circle class="halo" cx="319.7" cy="684.0" r="33.9" fill="#b4573f" opacity="0"/><circle cx="319.7" cy="684.0" r="16.1" fill="#ffffff" stroke="#b4573f" stroke-width="3.9"/><text x="319.7" y="689.6" font-size="15.4" fill="#b4573f" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">16</text></g><g class="pin" data-num="17" data-name="加尼叶歌剧院"><circle class="halo" cx="541.1" cy="383.0" r="33.9" fill="#b4573f" opacity="0"/><circle cx="541.1" cy="383.0" r="16.1" fill="#ffffff" stroke="#b4573f" stroke-width="3.9"/><text x="541.1" y="388.5" font-size="15.4" fill="#b4573f" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">17</text></g><g class="pin" data-num="18" data-name="圣日耳曼德佩"><circle class="halo" cx="567.9" cy="698.2" r="33.9" fill="#b4573f" opacity="0"/><circle cx="567.9" cy="698.2" r="16.1" fill="#ffffff" stroke="#b4573f" stroke-width="3.9"/><text x="567.9" y="703.7" font-size="15.4" fill="#b4573f" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">18</text></g><g transform="translate(992,35)"><circle r="21.7" fill="#ffffff" opacity="0.85"/><path d="M0,-11.8 L7.5,7.1 L0,3.2 L-7.5,7.1 Z" fill="#7d6a5f"/><text x="0" y="18.7" font-size="13.8" fill="#7d6a5f" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">N</text></g><g><rect x="27.6" y="970.8" width="174.8" height="29.5" fill="#ffffff" opacity="0.8"/><line x1="35.4" y1="992.5" x2="194.5" y2="992.5" stroke="#6b5a50" stroke-width="3.9"/><line x1="35.4" y1="986.6" x2="35.4" y2="998.4" stroke="#6b5a50" stroke-width="2.4"/><line x1="194.5" y1="986.6" x2="194.5" y2="998.4" stroke="#6b5a50" stroke-width="2.4"/><text x="115.0" y="984.6" font-size="13.8" fill="#6b5a50" text-anchor="middle" font-family="Helvetica,Arial">1 km</text></g><text x="1012.2" y="1015.1" font-size="11.0" fill="#5a5148" text-anchor="end" font-family="Helvetica,Arial" opacity="0.75">© OpenStreetMap contributors</text></svg></div><div class="maplegend"><div class="lg" data-num="1"><span class="badge">1</span>埃菲尔铁塔</div><div class="lg" data-num="2"><span class="badge">2</span>圣礼拜堂</div><div class="lg" data-num="3"><span class="badge">3</span>巴黎圣母院</div><div class="lg" data-num="4"><span class="badge">4</span>克吕尼浴场</div><div class="lg" data-num="5"><span class="badge">5</span>先贤祠</div><div class="lg" data-num="6"><span class="badge">6</span>圣心堂</div><div class="lg" data-num="7"><span class="badge">7</span>奥赛美术馆</div><div class="lg" data-num="8"><span class="badge">8</span>凯旋门</div><div class="lg" data-num="9"><span class="badge">9</span>卢浮宫</div><div class="lg" data-num="10"><span class="badge">10</span>橘园</div><div class="lg" data-num="11"><span class="badge">11</span>协和广场</div><div class="lg" data-num="12"><span class="badge">12</span>旺多姆广场</div><div class="lg" data-num="13"><span class="badge">13</span>凡尔赛宫</div><div class="lg" data-num="14"><span class="badge c">14</span>亚历山大三世桥</div><div class="lg" data-num="15"><span class="badge c">15</span>罗丹美术馆</div><div class="lg" data-num="16"><span class="badge c">16</span>荣军院</div><div class="lg" data-num="17"><span class="badge c">17</span>加尼叶歌剧院</div><div class="lg" data-num="18"><span class="badge c">18</span>圣日耳曼德佩</div></div></div></div>
+<p class="mapnote"><b>红色实心</b>＝行程内的景点，<b>红圈</b>＝备选。数字和下面景点的编号对应。<b>用浏览器打开时，把鼠标移到右边名字上，图上对应的点会亮起</b>（点一下跳到该景点）。地图数据 © OpenStreetMap 贡献者。</p>
+
+<div class="site" id="s1">
+  <div class="pc"><img class="pf" src="images/01.jpg" data-full="images/full/01.jpg" alt="Eiffel Tower"></div>
+  <div class="tx">
+    <div class="cn"><span class="badge">1</span>埃菲尔铁塔</div>
+    <div class="nm">Eiffel Tower &nbsp;·&nbsp; <i>Tour Eiffel</i></div>
+    <div class="yr">1889</div>
+    <div class="lead">为 1889 年的世界博览会而建，本来只是一座二十年期的临时建筑。</div>
+    <p><span class="lbl">它是怎么来的 ·</span> 1889 年法国办世界博览会（Exposition universelle），想用一个东西告诉全世界：我们从 1870 年战败里站起来了。工程师古斯塔夫·埃菲尔（Gustave Eiffel）的公司提出造一座三百米高的铁塔，巴黎的建筑师们集体反对，说它会在天上戳一个洞。埃菲尔还是把它造了出来，用了 18,038 块铁件和 250 万颗铆钉，没有一处焊接。</p>
+    <p><span class="lbl">为什么留到今天 ·</span> 按合同，它 1909 年就该被拆掉。救它的是塔顶那根天线 —— 军方发现它可以收发无线电、能提前发现敌机，于是一夜之间，这座"碍眼的铁架"变成了国家的基础设施。后来它又成了广播塔、电视塔。一个东西只要还有用，就没人舍得拆。</p>
+    <p><span class="lbl">一段历史 ·</span> 建塔之前，莫泊桑、小仲马等三百多位文人联名抗议，说它是"插在巴黎胸口的一根铁针"。传说莫泊桑常去塔里的餐厅吃饭 —— 因为那是全巴黎唯一看不见铁塔的地方。这个说法未必是真的，但巴黎人至今爱讲。</p>
+  </div>
+</div>
+
+<div class="site" id="s2">
+  <div class="pc"><img class="pf" src="images/02.jpg" data-full="images/full/02.jpg" alt="Sainte-Chapelle"></div>
+  <div class="tx">
+    <div class="cn"><span class="badge">2</span>圣礼拜堂</div>
+    <div class="nm">Sainte-Chapelle &nbsp;·&nbsp; <i>Sainte-Chapelle</i></div>
+    <div class="yr">1248</div>
+    <div class="lead">路易九世为了存放“耶稣的荆棘冠”而建，本质上是一座巨大的圣物匣。</div>
+    <p><span class="lbl">它是怎么来的 ·</span> 1239 年，路易九世（Saint Louis）花了一大笔钱，从君士坦丁堡的拉丁皇帝手里买下据说是耶稣受难时戴的荆棘冠（Couronne d'épines）。这么贵重的东西不能随便放，他就在西岱岛上给自己盖了一座礼拜堂，造价接近当时法国一整年的财政收入。</p>
+    <p><span class="lbl">为什么留到今天 ·</span> 法国大革命时，里面的圣物柜被熔了，金银散了，但<b>玻璃窗活了下来</b>。十九世纪，建筑师维奥莱-勒-杜克（Viollet-le-Duc）把它整个修了一遍，我们今天看到的颜色，有一半是他的手艺、一半是十三世纪的原物。荆棘冠后来搬去了巴黎圣母院。</p>
+    <p><span class="lbl">一段历史 ·</span> 走进去会觉得墙不见了 —— 十五扇十五米高的窗，一千一百一十三个圣经场景，从创世纪一路讲到末日审判。中世纪的工匠相信光是神的语言，所以他们把石头压到最细，只为了多留一点位置给玻璃。</p>
+  </div>
+</div>
+
+<div class="site" id="s3">
+  <div class="pc"><img class="pf" src="images/03.jpg" data-full="images/full/03.jpg" alt="Notre-Dame de Paris"></div>
+  <div class="tx">
+    <div class="cn"><span class="badge">3</span>巴黎圣母院</div>
+    <div class="nm">Notre-Dame de Paris &nbsp;·&nbsp; <i>Cathédrale Notre-Dame de Paris</i></div>
+    <div class="yr">1163–1345</div>
+    <div class="lead">哥特式建筑的起点之一，建了近两百年。</div>
+    <p><span class="lbl">它是怎么来的 ·</span> 1163 年，巴黎主教莫里斯·德·絮利（Maurice de Sully）决定盖一座配得上巴黎的教堂 —— 那时候巴黎刚成为王国首都，需要一座比圣但尼（Saint-Denis）更气派的建筑。前后换了四代工匠，到 1345 年才算完工。</p>
+    <p><span class="lbl">为什么留到今天 ·</span> 它差点死过两次。一次是大革命，1793 年革命者把西立面国王廊的二十八尊雕像全部砍头，把教堂改成"理性神殿"；一次是 2019 年 4 月的大火，屋顶和尖塔烧塌。两次都活下来了 —— 第一次靠雨果，他 1831 年的小说《巴黎圣母院》让全法国重新心疼这座教堂；第二次靠全世界在四十八小时里捐出的八亿多欧元。</p>
+    <p><span class="lbl">一段历史 ·</span> 1804 年拿破仑在这里加冕，他从教皇手里拿过皇冠，自己戴在头上 —— 那个动作是画给全欧洲看的。2024 年 12 月重开时，屋顶换上了从两百多片法国森林里挑出的一千多棵百年橡树，用中世纪的木工方式重新搭起来。</p>
+  </div>
+</div>
+
+<div class="site" id="s4">
+  <div class="pc"><img class="pf" src="images/04.jpg" data-full="images/full/04.jpg" alt="Thermes de Cluny"></div>
+  <div class="tx">
+    <div class="cn"><span class="badge">4</span>克吕尼浴场</div>
+    <div class="nm">Thermes de Cluny &nbsp;·&nbsp; <i>Thermes de Cluny</i></div>
+    <div class="yr">1–3 世纪</div>
+    <div class="lead">巴黎地下埋着的罗马公共浴场，属于当年的 Lutetia。</div>
+    <p><span class="lbl">它是怎么来的 ·</span> 公元前 52 年凯撒征服高卢之后，罗马人在塞纳河左岸建了一座城，叫卢泰西亚（Lutetia）。一世纪到三世纪之间，他们在这里修了大型公共浴场 —— 冷水池、温水池、热水池、蒸汽室，是罗马人每天社交的地方。</p>
+    <p><span class="lbl">为什么留到今天 ·</span> 罗马帝国垮了以后，浴场被拆了一半，剩下的墙被拿来当采石场。中世纪的人干脆在它上面盖了克吕尼修道院（Abbaye de Cluny），浴场的拱顶就成了修士们的地下室。一直到十九世纪，人们才挖开，发现下面站着一座罗马建筑。</p>
+    <p><span class="lbl">一段历史 ·</span> 今天它是中世纪博物馆（Musée de Cluny）。你可以在同一个屋檐下看到两层时间：楼上是《贵妇与独角兽》挂毯（La Dame à la licorne），楼下是罗马人的冷水浴池（frigidarium），十四米高的拱顶。巴黎不是一座古城，它是好几座城叠起来的，这里是最直观的一处。</p>
+  </div>
+</div>
+
+<div class="site" id="s5">
+  <div class="pc"><img class="pf" src="images/05.jpg" data-full="images/full/05.jpg" alt="Panthéon"></div>
+  <div class="tx">
+    <div class="cn"><span class="badge">5</span>先贤祠</div>
+    <div class="nm">Panthéon &nbsp;·&nbsp; <i>Panthéon</i></div>
+    <div class="yr">1790</div>
+    <div class="lead">本来是教堂，革命后改成了“伟人祠”，之后反复改了好几次。</div>
+    <p><span class="lbl">它是怎么来的 ·</span> 1744 年，路易十五生了一场重病，发誓如果痊愈就在圣热内维耶芙山上盖一座教堂。建筑师苏夫洛（Jacques-Germain Soufflot）设计了一个希腊十字平面、带巨大穹顶的方案，1758 年动工。</p>
+    <p><span class="lbl">为什么留到今天 ·</span> 教堂还没盖完，革命就来了。1791 年制宪议会决定把它改成安葬伟人的世俗祠庙（Panthéon，名字来自罗马的万神殿）。之后的八十年里，它跟着政权翻来覆去改了四次：帝国时期改回教堂，共和时期改回祠庙。它今天的样子，本身就是法国政治史的一张心电图。</p>
+    <p><span class="lbl">一段历史 ·</span> 地下的墓室里，伏尔泰和卢梭面对面躺着 —— 这两个人生前互相攻击，死后被安排隔着走廊对望。中殿正中吊着的傅科摆（pendule de Foucault），1851 年在这里第一次向公众证明地球在自转。</p>
+  </div>
+</div>
+
+<div class="site" id="s6">
+  <div class="pc"><img class="pf" src="images/06.jpg" data-full="images/full/06.jpg" alt="Sacré-Cœur"></div>
+  <div class="tx">
+    <div class="cn"><span class="badge">6</span>圣心堂</div>
+    <div class="nm">Sacré-Cœur &nbsp;·&nbsp; <i>Basilique du Sacré-Cœur</i></div>
+    <div class="yr">1875–1914</div>
+    <div class="lead">一座从诞生起就带着政治性的教堂，为“赎罪”而建。</div>
+    <p><span class="lbl">它是怎么来的 ·</span> 1870 年法国被普鲁士打败，1871 年巴黎公社又在蒙马特起事、随后被血腥镇压。保守派把这两件事看成"神对法国的惩罚"，发起了"国民誓愿"（Vœu national），要在蒙马特 —— 公社起事的地方 —— 盖一座献给耶稣圣心的教堂。</p>
+    <p><span class="lbl">为什么留到今天 ·</span> 它靠全国小额捐款盖了三十九年，1914 年完工，1919 年祝圣。到今天它仍然是争议建筑：左派认为它是"镇压公社的纪念碑"，右派认为它是信仰的见证。但巴黎人无论立场，都会上来坐在台阶上看城。</p>
+    <p><span class="lbl">一段历史 ·</span> 外墙用的石灰岩叫 travertine，下雨时会渗出方解石，所以它<b>越淋越白</b>。旁边的帖特广场（Place du Tertre），一百多年前是毕加索、梵高、雷诺阿租不起别的房子时住的地方。</p>
+  </div>
+</div>
+
+<div class="site" id="s7">
+  <div class="pc"><img class="pf" src="images/07.jpg" data-full="images/full/07.jpg" alt="Musée d&#x27;Orsay"></div>
+  <div class="tx">
+    <div class="cn"><span class="badge">7</span>奥赛美术馆</div>
+    <div class="nm">Musée d'Orsay &nbsp;·&nbsp; <i>Musée d'Orsay</i></div>
+    <div class="yr">1900 / 1986</div>
+    <div class="lead">由一座火车站改成，收藏的是“当年被官方沙龙拒绝”的那一代画家。</div>
+    <p><span class="lbl">它是怎么来的 ·</span> 1900 年巴黎办世博会，奥尔良铁路公司（Compagnie du chemin de fer de Paris à Orléans）在塞纳河边盖了奥赛车站（Gare d'Orsay），建筑师维克多·拉卢（Victor Laloux）把车站包进了一座石头宫殿的外壳里。</p>
+    <p><span class="lbl">为什么留到今天 ·</span> 1939 年，新的列车太长，站台装不下了，车站停用。之后它做过邮局、做过剧场、差点在 1970 年代被拆掉盖酒店。1977 年法国政府决定把它改成美术馆，1986 年开馆。一座工业建筑被留下来，是因为有人愿意多想一步。</p>
+    <p><span class="lbl">一段历史 ·</span> 五楼是精华：莫奈、雷诺阿、德加、梵高、塞尚。走到大厅尽头，别错过大钟后面那扇窗 —— 从钟面看出去是塞纳河和对岸的杜乐丽花园。印象派画家第一次把"光"当成画的主题，而不是背景。</p>
+  </div>
+</div>
+
+<div class="site" id="s8">
+  <div class="pc"><img class="pf" src="images/08.jpg" data-full="images/full/08.jpg" alt="Arc de Triomphe"></div>
+  <div class="tx">
+    <div class="cn"><span class="badge">8</span>凯旋门</div>
+    <div class="nm">Arc de Triomphe &nbsp;·&nbsp; <i>Arc de triomphe de l'Étoile</i></div>
+    <div class="yr">1806–1836</div>
+    <div class="lead">拿破仑下令建造，但他本人没能等到完工。</div>
+    <p><span class="lbl">它是怎么来的 ·</span> 1806 年，拿破仑在奥斯特里茨（Austerlitz）大胜之后对士兵说："你们将穿过凯旋门回家。"（Vous ne rentrerez dans vos foyers que sous des arcs de triomphe.）工程当年动工，是罗马提图斯凯旋门的放大版。</p>
+    <p><span class="lbl">为什么留到今天 ·</span> 拿破仑 1815 年倒台，工程停摆，直到 1836 年七月王朝时期才完工 —— 那时候他已经死了十五年。1840 年，他的灵柩从这下面经过，全巴黎来看。</p>
+    <p><span class="lbl">一段历史 ·</span> 四组巨型浮雕里，吕德（François Rude）的《马赛曲》（La Marseillaise）最震撼 —— 自由女神在士兵头顶嘶吼。拱顶下刻着六百六十位将军的名字，<b>打过败仗的名字下面画了一条线</b>。正下方是 1920 年的无名烈士墓，火焰每天晚上六点半重新点燃。</p>
+  </div>
+</div>
+
+<div class="site" id="s9">
+  <div class="pc"><img class="pf" src="images/09.jpg" data-full="images/full/09.jpg" alt="Louvre"></div>
+  <div class="tx">
+    <div class="cn"><span class="badge">9</span>卢浮宫</div>
+    <div class="nm">Louvre &nbsp;·&nbsp; <i>Musée du Louvre</i></div>
+    <div class="yr">1190 → 1793</div>
+    <div class="lead">从中世纪城堡变成王宫，再变成公共博物馆，每一步都是政治决定的。</div>
+    <p><span class="lbl">它是怎么来的 ·</span> 1190 年，国王腓力二世（Philippe Auguste）在塞纳河边修了一座城堡，用来防英格兰人和诺曼人从河上打进来。后来查理五世把它改成住所，弗朗索瓦一世 1546 年拆了旧堡、按文艺复兴的样子重建 —— 从那时起它才成为宫殿。</p>
+    <p><span class="lbl">为什么留到今天 ·</span> 1682 年路易十四把宫廷搬去凡尔赛，卢浮宫被留给各个学院和艺术家住。大革命一来，1793 年国民公会把它改成"中央艺术博物馆"（Muséum central des arts）—— 国王的收藏变成全民的收藏，这是革命最重要的文化宣言之一。</p>
+    <p><span class="lbl">一段历史 ·</span> 1911 年，《蒙娜丽莎》被一个意大利玻璃工佩鲁贾（Vincenzo Peruggia）从墙上取下来，藏在衣服里带出馆，两年后才在佛罗伦萨找到。这件事让这幅画从"名作"变成"全世界都知道的那幅画"。</p>
+  </div>
+</div>
+
+<div class="site" id="s10">
+  <div class="pc"><img class="pf" src="images/10.jpg" data-full="images/full/10.jpg" alt="Musée de l&#x27;Orangerie"></div>
+  <div class="tx">
+    <div class="cn"><span class="badge">10</span>橘园</div>
+    <div class="nm">Musée de l'Orangerie &nbsp;·&nbsp; <i>Musée de l'Orangerie</i></div>
+    <div class="yr">1927</div>
+    <div class="lead">莫奈晚年把自己画的《睡莲》捐给国家，条件是必须按他设计的方式挂。</div>
+    <p><span class="lbl">它是怎么来的 ·</span> 它原本是杜乐丽花园（Jardin des Tuileries）的柑橘温室，1852 年建的，冬天用来存放园里的橘树。</p>
+    <p><span class="lbl">为什么留到今天 ·</span> 1918 年一战结束那天，莫奈决定把《睡莲》（Nymphéas）组画捐给法国。他提了一个条件：不能随便挂在墙上，要盖两个椭圆形的房间，光从头顶来。1927 年开馆，就在他去世的第二天。</p>
+    <p><span class="lbl">一段历史 ·</span> 莫奈晚年得了白内障，看东西越来越模糊。那八幅画越来越没有边界、越来越像光斑，不是他故意抽象，是他真的快看不见了。站在两个椭圆厅中间转一圈，会明白他想要的是什么：没有尽头的水面。</p>
+  </div>
+</div>
+
+<div class="site" id="s11">
+  <div class="pc"><img class="pf" src="images/11.jpg" data-full="images/full/11.jpg" alt="Place de la Concorde"></div>
+  <div class="tx">
+    <div class="cn"><span class="badge">11</span>协和广场</div>
+    <div class="nm">Place de la Concorde &nbsp;·&nbsp; <i>Place de la Concorde</i></div>
+    <div class="yr">1755</div>
+    <div class="lead">巴黎最大的广场，也是法国历史上流过最多血的地方。</div>
+    <p><span class="lbl">它是怎么来的 ·</span> 1755 年到 1772 年，建筑师加布里埃尔（Ange-Jacques Gabriel）为路易十五造了这个广场，中间立着国王的骑马像，名字叫"路易十五广场"（Place Louis XV）。</p>
+    <p><span class="lbl">为什么留到今天 ·</span> 大革命时它改名"革命广场"（Place de la Révolution），断头台就架在这里。1793 到 1794 年，路易十六、玛丽·安托瓦内特等约一千一百人在此被处决。后来它改名"协和广场"—— 名字本身就是一次和解的姿态。</p>
+    <p><span class="lbl">一段历史 ·</span> 广场中央的方尖碑是 1836 年埃及送的，来自卢克索神庙，三千三百年历史 —— 比巴黎城还老。它是当时世界上把整块石头竖起来的最重物体之一，底座上刻着搬运过程的图解。</p>
+  </div>
+</div>
+
+<div class="site" id="s12">
+  <div class="pc"><img class="pf" src="images/12.jpg" data-full="images/full/12.jpg" alt="Place Vendôme"></div>
+  <div class="tx">
+    <div class="cn"><span class="badge">12</span>旺多姆广场</div>
+    <div class="nm">Place Vendôme &nbsp;·&nbsp; <i>Place Vendôme</i></div>
+    <div class="yr">1699 / 1810</div>
+    <div class="lead">路易十四的皇家广场，今天巴黎珠宝和酒店的心脏。</div>
+    <p><span class="lbl">它是怎么来的 ·</span> 1699 年，建筑师阿杜安-芒萨尔（Jules Hardouin-Mansart）设计了这座八角形广场，中央立着路易十四的骑马像，叫"路易大帝广场"（Place Louis-le-Grand）。</p>
+    <p><span class="lbl">为什么留到今天 ·</span> 1792 年革命者把国王的铜像熔了。1810 年拿破仑在原地立起一根四十四米高的柱子，用的是奥斯特里茨战役缴获的一千二百门大炮。1871 年巴黎公社把它推倒（画家库尔贝被判赔偿），1874 年又立了回来。</p>
+    <p><span class="lbl">一段历史 ·</span> 柱身是一圈螺旋浮雕，讲拿破仑的战役，像罗马的图拉真柱。广场四周是 Ritz 酒店和顶级珠宝店 —— <b>你今晚就住在这里</b>。肖邦 1849 年在 12 号去世。</p>
+  </div>
+</div>
+
+<div class="site" id="s13">
+  <div class="pc"><img class="pf" src="images/43.jpg" data-full="images/full/43.jpg" alt="Palace of Versailles"></div>
+  <div class="tx">
+    <div class="cn"><span class="badge">13</span>凡尔赛宫</div>
+    <div class="nm">Palace of Versailles &nbsp;·&nbsp; <i>Château de Versailles</i></div>
+    <div class="yr">1661–1710</div>
+    <div class="lead">一座宫殿，把整个法国的权力从巴黎搬到了西南郊外。</div>
+    <p><span class="lbl">它是怎么来的 ·</span> 1661 年，路易十四（Louis XIV）嫌巴黎的卢浮宫太吵、太不安全 —— 他小时候经历过投石党叛乱，对巴黎有阴影。他把父亲在凡尔赛的猎庄改建成宫殿，动用了三万名工人和六千匹马，前后五十年，到他死前才基本完工。</p>
+    <p><span class="lbl">为什么留到今天 ·</span> 1789 年革命，王室被押回巴黎，凡尔赛空了四十年，家具被拍卖、花园荒废。1837 年，七月王朝的国王路易-菲利普把它改成"献给法国光荣"的博物馆，才救下来 —— 一座宫殿改成了历史陈列馆，从此不能拆。</p>
+    <p><span class="lbl">一段历史 ·</span> 镜厅（Galerie des Glaces）七十三米长，十七面大镜对着十七扇窗，1919 年《凡尔赛条约》就在这里签。花园的设计师勒诺特（André Le Nôtre）把中轴线一路引向地平线，人站在宫殿台阶上会觉得自己是世界的中心 —— 那就是路易十四想要的效果。</p>
+  </div>
+</div>
+<div class="mapunit"><div class="maprow"><div class="mapbox"><svg class="cm" viewBox="216.4 87.4 869.3 555.7" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet"><rect x="0" y="0" width="1280" height="768" fill="#f1ece6"/><image x="0" y="0" width="256" height="256" href="images/tiles/paris-wide/12_2071_1408.png"/><image x="0" y="256" width="256" height="256" href="images/tiles/paris-wide/12_2071_1409.png"/><image x="0" y="512" width="256" height="256" href="images/tiles/paris-wide/12_2071_1410.png"/><image x="256" y="0" width="256" height="256" href="images/tiles/paris-wide/12_2072_1408.png"/><image x="256" y="256" width="256" height="256" href="images/tiles/paris-wide/12_2072_1409.png"/><image x="256" y="512" width="256" height="256" href="images/tiles/paris-wide/12_2072_1410.png"/><image x="512" y="0" width="256" height="256" href="images/tiles/paris-wide/12_2073_1408.png"/><image x="512" y="256" width="256" height="256" href="images/tiles/paris-wide/12_2073_1409.png"/><image x="512" y="512" width="256" height="256" href="images/tiles/paris-wide/12_2073_1410.png"/><image x="768" y="0" width="256" height="256" href="images/tiles/paris-wide/12_2074_1408.png"/><image x="768" y="256" width="256" height="256" href="images/tiles/paris-wide/12_2074_1409.png"/><image x="768" y="512" width="256" height="256" href="images/tiles/paris-wide/12_2074_1410.png"/><image x="1024" y="0" width="256" height="256" href="images/tiles/paris-wide/12_2075_1408.png"/><image x="1024" y="256" width="256" height="256" href="images/tiles/paris-wide/12_2075_1409.png"/><image x="1024" y="512" width="256" height="256" href="images/tiles/paris-wide/12_2075_1410.png"/><rect x="0" y="0" width="1280" height="768" fill="#ffffff" opacity="0.58"/><circle cx="963.3" cy="291.9" r="17.2" fill="#ffffff" stroke="#8d7a6e" stroke-width="4.9" opacity="0.95"/><text x="963.3" y="299.3" font-size="15.3" fill="#6f5b50" text-anchor="middle" font-family="PingFang SC,Helvetica,Arial">巴黎市区</text><g class="pin" data-num="13" data-name="凡尔赛宫"><circle class="halo" cx="288.1" cy="520.7" r="48.6" fill="#b4573f" opacity="0"/><circle cx="288.1" cy="520.7" r="23.1" fill="#b4573f" stroke="#ffffff" stroke-width="4.9"/><text x="288.1" y="527.6" font-size="19.2" fill="#ffffff" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">13</text></g><g transform="translate(1241,44)"><circle r="27.1" fill="#ffffff" opacity="0.85"/><path d="M0,-14.8 L9.4,8.9 L0,3.9 L-9.4,8.9 Z" fill="#7d6a5f"/><text x="0" y="23.4" font-size="17.2" fill="#7d6a5f" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">N</text></g><g><rect x="34.5" y="701.5" width="59.4" height="36.9" fill="#ffffff" opacity="0.8"/><line x1="44.3" y1="728.6" x2="84.0" y2="728.6" stroke="#6b5a50" stroke-width="4.9"/><line x1="44.3" y1="721.2" x2="44.3" y2="736.0" stroke="#6b5a50" stroke-width="3.0"/><line x1="84.0" y1="721.2" x2="84.0" y2="736.0" stroke="#6b5a50" stroke-width="3.0"/><text x="64.2" y="718.8" font-size="17.2" fill="#6b5a50" text-anchor="middle" font-family="Helvetica,Arial">1 km</text></g><text x="1265.2" y="756.9" font-size="13.8" fill="#5a5148" text-anchor="end" font-family="Helvetica,Arial" opacity="0.75">© OpenStreetMap contributors</text></svg></div><div class="maplegend"><div class="lg" data-num="13"><span class="badge">13</span>凡尔赛宫</div></div></div></div><p class="mapnote">把市区和凡尔赛放在一张图上 —— <b>⑬ 凡尔赛宫在西南 15 公里</b>，坐 RER C 约 40 分钟。</p>
+<div class="takeaway"><b>如果只记一件事：</b>巴黎的美不是“古老”，而是<b>刻意被改造出来的</b>。豪斯曼在 1853 年把中世纪巴黎拆掉重建 —— 你看到的“经典巴黎”，其实只有一百五十年历史。</div>
+<div class="cands"><h4>备选 · 还有力气就去</h4><div class="note">这些没有排进行程，但都在动线上。看时间和体力临时决定，不需要现在订。</div>
+<div class="cand">
+  <div class="tx2">
+    <div class="cn2"><span class="badge c">14</span>亚历山大三世桥</div>
+    <div class="nm2">Pont Alexandre III &nbsp;·&nbsp; <i>Pont Alexandre III</i> &nbsp;<span class="yr2">1900</span></div>
+    <p>为 1900 年世博会而建，以俄国沙皇亚历山大三世命名 —— 法国和俄国刚结盟。桥身是一道极扁的单拱，两侧四根柱子顶着镀金的飞马雕像。</p>
+    <p class="win"><b>怎么塞进去 ·</b> 11/17 从奥赛出来沿河往西走十分钟就到，顺路，不占时间。</p>
+  </div>
+</div>
+<div class="cand">
+  <div class="tx2">
+    <div class="cn2"><span class="badge c">15</span>罗丹美术馆</div>
+    <div class="nm2">Musée Rodin &nbsp;·&nbsp; <i>Musée Rodin</i> &nbsp;<span class="yr2">1919</span></div>
+    <p>罗丹生前在毕宏府邸（Hôtel Biron）租了两间房当工作室，条件是把作品捐给国家。馆里是《思想者》《吻》，院子里是《地狱之门》的原件。</p>
+    <p class="win"><b>怎么塞进去 ·</b> 11/17 下午，奥赛出来步行十五分钟，一小时够看。</p>
+  </div>
+</div>
+<div class="cand">
+  <div class="tx2">
+    <div class="cn2"><span class="badge c">16</span>荣军院</div>
+    <div class="nm2">Les Invalides &nbsp;·&nbsp; <i>Hôtel des Invalides</i> &nbsp;<span class="yr2">1670</span></div>
+    <p>路易十四为伤残老兵建的疗养院，后来成了军事博物馆。拿破仑的遗体 1840 年从圣赫勒拿岛迎回，埋在六层套棺里，参观者可以绕到下层看。</p>
+    <p class="win"><b>怎么塞进去 ·</b> 11/16 或 11/18 抽一小时。登顶看荣军院金顶是巴黎最好的俯视之一。</p>
+  </div>
+</div>
+<div class="cand">
+  <div class="tx2">
+    <div class="cn2"><span class="badge c">17</span>加尼叶歌剧院</div>
+    <div class="nm2">Palais Garnier &nbsp;·&nbsp; <i>Palais Garnier</i> &nbsp;<span class="yr2">1875</span></div>
+    <p>拿破仑三世时代的歌剧院，大理石、镀金、巨大的楼梯间 —— 十九世纪资产阶级审美的顶点。1964 年夏加尔给天顶画了一幅新画，当年被骂得很惨，现在是巴黎最受争议也最受喜欢的天顶。</p>
+    <p class="win"><b>怎么塞进去 ·</b> 11/18 卢浮宫之后，和老佛爷百货连着走，晚上可以买站票听一场。</p>
+  </div>
+</div>
+<div class="cand">
+  <div class="tx2">
+    <div class="cn2"><span class="badge c">18</span>圣日耳曼德佩</div>
+    <div class="nm2">Saint-Germain-des-Prés &nbsp;·&nbsp; <i>Saint-Germain-des-Prés</i> &nbsp;<span class="yr2">11 世纪</span></div>
+    <p>巴黎最古老的教堂钟楼，比圣母院还早。二战后这里是存在主义的地盘：萨特、波伏娃每天在花神咖啡馆（Café de Flore）和双叟（Les Deux Magots）写作。</p>
+    <p class="win"><b>怎么塞进去 ·</b> 11/16 下午茶，从圣礼拜堂走过来二十分钟。</p>
+  </div>
+</div></div>
+
+<h2>二、尼斯 · 蔚蓝海岸 <span class="en">NICE · 从希腊殖民地到法国</span></h2>
+<p class="lede">尼斯比法国古老得多。公元前四世纪左右，来自马赛的希腊人在这里建立贸易站，取名尼卡亚（Nikaia，胜利女神）。
+此后它先后属于罗马、普罗旺斯伯爵、萨伏依公国（Savoie）—— 从 1388 到 1860 年，尼斯是意大利的领土，不是法国的。
+十八世纪英国贵族来此过冬，修了海滨步道；1860 年萨伏依把它割让给法国，换取军事支持。
+所以尼斯的骨子里是意大利的：老城的窄巷、拱廊、市场的语气，都更像都灵而不是巴黎。</p>
+<div class="mapunit"><div class="maprow"><div class="mapbox"><svg class="cm" viewBox="218.5 111.4 1101.4 1302.8" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet"><rect x="0" y="0" width="1536" height="1536" fill="#f1ece6"/><image x="0" y="0" width="256" height="256" href="images/tiles/nice/15_17043_11949.png"/><image x="0" y="256" width="256" height="256" href="images/tiles/nice/15_17043_11950.png"/><image x="0" y="512" width="256" height="256" href="images/tiles/nice/15_17043_11951.png"/><image x="0" y="768" width="256" height="256" href="images/tiles/nice/15_17043_11952.png"/><image x="0" y="1024" width="256" height="256" href="images/tiles/nice/15_17043_11953.png"/><image x="0" y="1280" width="256" height="256" href="images/tiles/nice/15_17043_11954.png"/><image x="256" y="0" width="256" height="256" href="images/tiles/nice/15_17044_11949.png"/><image x="256" y="256" width="256" height="256" href="images/tiles/nice/15_17044_11950.png"/><image x="256" y="512" width="256" height="256" href="images/tiles/nice/15_17044_11951.png"/><image x="256" y="768" width="256" height="256" href="images/tiles/nice/15_17044_11952.png"/><image x="256" y="1024" width="256" height="256" href="images/tiles/nice/15_17044_11953.png"/><image x="256" y="1280" width="256" height="256" href="images/tiles/nice/15_17044_11954.png"/><image x="512" y="0" width="256" height="256" href="images/tiles/nice/15_17045_11949.png"/><image x="512" y="256" width="256" height="256" href="images/tiles/nice/15_17045_11950.png"/><image x="512" y="512" width="256" height="256" href="images/tiles/nice/15_17045_11951.png"/><image x="512" y="768" width="256" height="256" href="images/tiles/nice/15_17045_11952.png"/><image x="512" y="1024" width="256" height="256" href="images/tiles/nice/15_17045_11953.png"/><image x="512" y="1280" width="256" height="256" href="images/tiles/nice/15_17045_11954.png"/><image x="768" y="0" width="256" height="256" href="images/tiles/nice/15_17046_11949.png"/><image x="768" y="256" width="256" height="256" href="images/tiles/nice/15_17046_11950.png"/><image x="768" y="512" width="256" height="256" href="images/tiles/nice/15_17046_11951.png"/><image x="768" y="768" width="256" height="256" href="images/tiles/nice/15_17046_11952.png"/><image x="768" y="1024" width="256" height="256" href="images/tiles/nice/15_17046_11953.png"/><image x="768" y="1280" width="256" height="256" href="images/tiles/nice/15_17046_11954.png"/><image x="1024" y="0" width="256" height="256" href="images/tiles/nice/15_17047_11949.png"/><image x="1024" y="256" width="256" height="256" href="images/tiles/nice/15_17047_11950.png"/><image x="1024" y="512" width="256" height="256" href="images/tiles/nice/15_17047_11951.png"/><image x="1024" y="768" width="256" height="256" href="images/tiles/nice/15_17047_11952.png"/><image x="1024" y="1024" width="256" height="256" href="images/tiles/nice/15_17047_11953.png"/><image x="1024" y="1280" width="256" height="256" href="images/tiles/nice/15_17047_11954.png"/><image x="1280" y="0" width="256" height="256" href="images/tiles/nice/15_17048_11949.png"/><image x="1280" y="256" width="256" height="256" href="images/tiles/nice/15_17048_11950.png"/><image x="1280" y="512" width="256" height="256" href="images/tiles/nice/15_17048_11951.png"/><image x="1280" y="768" width="256" height="256" href="images/tiles/nice/15_17048_11952.png"/><image x="1280" y="1024" width="256" height="256" href="images/tiles/nice/15_17048_11953.png"/><image x="1280" y="1280" width="256" height="256" href="images/tiles/nice/15_17048_11954.png"/><rect x="0" y="0" width="1536" height="1536" fill="#ffffff" opacity="0.58"/><g class="pin" data-num="1" data-name="英国人漫步大道"><circle class="halo" cx="582.8" cy="1180.4" r="58.3" fill="#b4573f" opacity="0"/><circle cx="582.8" cy="1180.4" r="27.8" fill="#b4573f" stroke="#ffffff" stroke-width="5.9"/><text x="582.8" y="1189.9" font-size="26.6" fill="#ffffff" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">1</text></g><g class="pin" data-num="2" data-name="萨雷雅广场"><circle class="halo" cx="822.8" cy="1154.6" r="58.3" fill="#b4573f" opacity="0"/><circle cx="822.8" cy="1154.6" r="27.8" fill="#b4573f" stroke="#ffffff" stroke-width="5.9"/><text x="822.8" y="1164.1" font-size="26.6" fill="#ffffff" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">2</text></g><g class="pin" data-num="3" data-name="城堡山"><circle class="halo" cx="932.3" cy="1186.8" r="58.3" fill="#b4573f" opacity="0"/><circle cx="932.3" cy="1186.8" r="27.8" fill="#b4573f" stroke="#ffffff" stroke-width="5.9"/><text x="932.3" y="1196.4" font-size="26.6" fill="#ffffff" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">3</text></g><g class="pin" data-num="6" data-name="内格雷斯科酒店"><circle class="halo" cx="443.0" cy="1206.1" r="58.3" fill="#b4573f" opacity="0"/><circle cx="443.0" cy="1206.1" r="27.8" fill="#b4573f" stroke="#ffffff" stroke-width="5.9"/><text x="443.0" y="1215.7" font-size="26.6" fill="#ffffff" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">6</text></g><g class="pin" data-num="7" data-name="马蒂斯美术馆"><circle class="halo" cx="848.4" cy="342.2" r="50.9" fill="#b4573f" opacity="0"/><circle cx="848.4" cy="342.2" r="24.2" fill="#ffffff" stroke="#b4573f" stroke-width="5.9"/><text x="848.4" y="351.8" font-size="26.6" fill="#b4573f" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">7</text></g><g class="pin" data-num="8" data-name="夏加尔国家博物馆"><circle class="halo" cx="685.3" cy="229.4" r="50.9" fill="#b4573f" opacity="0"/><circle cx="685.3" cy="229.4" r="24.2" fill="#ffffff" stroke="#b4573f" stroke-width="5.9"/><text x="685.3" y="239.0" font-size="26.6" fill="#b4573f" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">8</text></g><g class="pin" data-num="9" data-name="俄罗斯东正教大教堂"><circle class="halo" cx="335.8" cy="887.1" r="50.9" fill="#b4573f" opacity="0"/><circle cx="335.8" cy="887.1" r="24.2" fill="#ffffff" stroke="#b4573f" stroke-width="5.9"/><text x="335.8" y="896.6" font-size="26.6" fill="#b4573f" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">9</text></g><g transform="translate(1489,53)"><circle r="32.5" fill="#ffffff" opacity="0.85"/><path d="M0,-17.7 L11.2,10.6 L0,4.7 L-11.2,10.6 Z" fill="#7d6a5f"/><text x="0" y="28.1" font-size="20.7" fill="#7d6a5f" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">N</text></g><g><rect x="41.4" y="1456.2" width="313.1" height="44.3" fill="#ffffff" opacity="0.8"/><line x1="53.2" y1="1488.7" x2="342.7" y2="1488.7" stroke="#6b5a50" stroke-width="5.9"/><line x1="53.2" y1="1479.9" x2="53.2" y2="1497.6" stroke="#6b5a50" stroke-width="3.5"/><line x1="342.7" y1="1479.9" x2="342.7" y2="1497.6" stroke="#6b5a50" stroke-width="3.5"/><text x="197.9" y="1476.9" font-size="20.7" fill="#6b5a50" text-anchor="middle" font-family="Helvetica,Arial">1 km</text></g><text x="1518.3" y="1522.7" font-size="16.5" fill="#5a5148" text-anchor="end" font-family="Helvetica,Arial" opacity="0.75">© OpenStreetMap contributors</text></svg></div><div class="maplegend"><div class="lg" data-num="1"><span class="badge">1</span>英国人漫步大道</div><div class="lg" data-num="2"><span class="badge">2</span>萨雷雅广场</div><div class="lg" data-num="3"><span class="badge">3</span>城堡山</div><div class="lg" data-num="4"><span class="badge">4</span>埃兹</div><div class="lg" data-num="5"><span class="badge">5</span>蒙特卡洛赌场</div><div class="lg" data-num="6"><span class="badge">6</span>内格雷斯科酒店</div><div class="lg" data-num="7"><span class="badge c">7</span>马蒂斯美术馆</div><div class="lg" data-num="8"><span class="badge c">8</span>夏加尔国家博物馆</div><div class="lg" data-num="9"><span class="badge c">9</span>俄罗斯东正教大教堂</div><div class="lg" data-num="10"><span class="badge c">10</span>昂蒂布</div><div class="lg" data-num="11"><span class="badge c">11</span>芒通</div><div class="lg" data-num="12"><span class="badge c">12</span>圣保罗德旺斯</div></div></div></div>
+<p class="mapnote"><b>红色实心</b>＝行程内的景点，<b>红圈</b>＝备选。数字和下面景点的编号对应。<b>用浏览器打开时，把鼠标移到右边名字上，图上对应的点会亮起</b>（点一下跳到该景点）。地图数据 © OpenStreetMap 贡献者。</p>
+
+<div class="site" id="s1">
+  <div class="pc"><img class="pf" src="images/13.jpg" data-full="images/full/13.jpg" alt="Promenade des Anglais"></div>
+  <div class="tx">
+    <div class="cn"><span class="badge">1</span>英国人漫步大道</div>
+    <div class="nm">Promenade des Anglais &nbsp;·&nbsp; <i>Promenade des Anglais</i></div>
+    <div class="yr">1820 年代</div>
+    <div class="lead">由住在尼斯的英国侨民出钱修的，名字就是这么来的。</div>
+    <p><span class="lbl">它是怎么来的 ·</span> 十八世纪后期，英国贵族开始冬天来尼斯避寒。1820 年代，一位叫刘易斯·韦（Lewis Way）的英国牧师发起募捐，沿着海边修了一条两米宽的小路（chemin de promenade），让侨民可以散步。</p>
+    <p><span class="lbl">为什么留到今天 ·</span> 这条路一路加宽、加长，今天有七公里，成了尼斯的脸。它的存在本身就是一段历史证据：尼斯的旅游经济，是英国人先做起来的。</p>
+    <p><span class="lbl">一段历史 ·</span> 1860 年尼斯从萨伏依（Savoie）割让给法国时，举行过一次公投，百分之九十九的人投票赞成加入法国 —— 但那是在法国军队已经进驻之后举行的。这条路后来成了蔚蓝海岸的象征，也成了 2016 年那场悲剧的现场。</p>
+  </div>
+</div>
+
+<div class="site" id="s2">
+  <div class="pc"><img class="pf" src="images/14.jpg" data-full="images/full/14.jpg" alt="Cours Saleya"></div>
+  <div class="tx">
+    <div class="cn"><span class="badge">2</span>萨雷雅广场</div>
+    <div class="nm">Cours Saleya &nbsp;·&nbsp; <i>Cours Saleya</i></div>
+    <div class="yr">中世纪</div>
+    <div class="lead">尼斯老城的心脏，一座到今天还在用的市场。</div>
+    <p><span class="lbl">它是怎么来的 ·</span> 尼斯老城（Vieux Nice）的街道是萨伏依时期留下的，窄、密、多拱廊，为了遮地中海夏天的大太阳。萨雷雅广场原本是帕永河（Paillon）的河床，河改道后空出来的地方就成了集市。</p>
+    <p><span class="lbl">为什么留到今天 ·</span> 它没有被改造成步行商业街，也没有被连锁店占领 —— 因为尼斯的蔬果、鲜花、橄榄和香料生意一直有人做，市场就一直活着。</p>
+    <p><span class="lbl">一段历史 ·</span> 上午是花市和菜市，本地人买普罗旺斯（Provence）的番茄、西葫芦花、橄榄；下午摊子收起，变成餐厅的露台；星期一换成古董和旧货。旁边的窄巷里，巴洛克教堂的立面是赭黄和赭红色的 —— 这是意大利的颜色，不是巴黎的。</p>
+  </div>
+</div>
+
+<div class="site" id="s3">
+  <div class="pc"><img class="pf" src="images/15.jpg" data-full="images/full/15.jpg" alt="Castle Hill"></div>
+  <div class="tx">
+    <div class="cn"><span class="badge">3</span>城堡山</div>
+    <div class="nm">Castle Hill &nbsp;·&nbsp; <i>Colline du Château</i></div>
+    <div class="yr">希腊 → 1706</div>
+    <div class="lead">尼斯最早的城市就在这座山上，城堡却已经没有了。</div>
+    <p><span class="lbl">它是怎么来的 ·</span> 公元前四世纪左右，来自马赛的希腊人在这里建了贸易站，取名尼卡亚（Nikaia），山上就是卫城。之后罗马人、萨伏依人都在同一位置加固工事，山顶的城堡一圈一圈加厚。</p>
+    <p><span class="lbl">为什么留到今天 ·</span> 1706 年，路易十四的军队围攻尼斯，攻下之后下令把城堡彻底拆毁 —— 因为他不想让敌人以后再拿它当据点。城堡从此消失，只剩山。十九世纪，尼斯人把它改成公园。</p>
+    <p><span class="lbl">一段历史 ·</span> 现在这里是俯瞰天使湾（Baie des Anges）最好的位置：那道著名的弧形海岸线，只有从高处才看得出完整的弧度。山上有瀑布、有儿童游乐场，还有一片面向大海的墓地 —— 尼斯的旧墓园（Cimetière du Château）。</p>
+  </div>
+</div>
+
+<div class="site" id="s4">
+  <div class="pc"><img class="pf" src="images/16.jpg" data-full="images/full/16.jpg" alt="Èze"></div>
+  <div class="tx">
+    <div class="cn"><span class="badge">4</span>埃兹</div>
+    <div class="nm">Èze &nbsp;·&nbsp; <i>Èze</i></div>
+    <div class="yr">中世纪</div>
+    <div class="lead">海拔四百多米的山顶石头村，曾是萨伏依的边境哨所。</div>
+    <p><span class="lbl">它是怎么来的 ·</span> 村子建在一块突起的岩石上，从上面能望到科西嘉。中世纪时它是萨伏依公国的东部门户，靠地势防守 —— 敌人从海上或岸上来，都得先爬这段坡。</p>
+    <p><span class="lbl">为什么留到今天 ·</span> 一战之后村子几乎空了，年轻人去了城里。二十世纪二三十年代，艺术家和作家发现了它，慢慢修房、搬进来，它才没有变成废墟。</p>
+    <p><span class="lbl">一段历史 ·</span> 从海边到村里的那条山路叫"尼采小径"（Chemin de Nietzsche）。据说尼采在埃兹住过几个冬天，在这条路上想出了《查拉图斯特拉如是说》里的一些句子。山顶的植物园（Jardin Exotique）现在是最佳观景台，种着仙人掌和多肉。</p>
+  </div>
+</div>
+
+<div class="site" id="s5">
+  <div class="pc"><img class="pf" src="images/17.jpg" data-full="images/full/17.jpg" alt="Monte Carlo Casino"></div>
+  <div class="tx">
+    <div class="cn"><span class="badge">5</span>蒙特卡洛赌场</div>
+    <div class="nm">Monte Carlo Casino &nbsp;·&nbsp; <i>Casino de Monte-Carlo</i></div>
+    <div class="yr">1863</div>
+    <div class="lead">一个只有两平方公里的小国，靠赌场的税废掉了所得税。</div>
+    <p><span class="lbl">它是怎么来的 ·</span> 1861 年，摩纳哥把芒通（Menton）和罗克布吕讷（Roquebrune）割让给法国，收入一下子少了一大半。亲王查理三世（Charles III）决定开赌场，请来了德国赌场经营者弗朗索瓦·布朗（François Blanc）。1863 年赌场开业，名字"Monte Carlo"就是亲王的名字。</p>
+    <p><span class="lbl">为什么留到今天 ·</span> 赌场的收入让摩纳哥废除了个人所得税，于是欧洲的富人和名人纷纷搬来 —— 这个国家今天的样子，是那台轮盘赌养出来的。</p>
+    <p><span class="lbl">一段历史 ·</span> 赌场旁边的歌剧院是夏尔·加尼叶（Charles Garnier）设计的 —— 就是巴黎歌剧院那位。他说："这将会是世界上最美的赌场。"（Ce sera certainement le plus beau casino du monde.）1893 年，俄国芭蕾舞团在这里首演，蒙特卡洛从此成了芭蕾的名城。</p>
+  </div>
+</div>
+
+<div class="site" id="s6">
+  <div class="pc"><img class="pf" src="images/18.jpg" data-full="images/full/18.jpg" alt="Hotel Negresco"></div>
+  <div class="tx">
+    <div class="cn"><span class="badge">6</span>内格雷斯科酒店</div>
+    <div class="nm">Hotel Negresco &nbsp;·&nbsp; <i>Hôtel Negresco</i></div>
+    <div class="yr">1913</div>
+    <div class="lead">一位移民出身的酒店老板，给蔚蓝海岸造的一座“美好年代”宫殿。</div>
+    <p><span class="lbl">它是怎么来的 ·</span> 亨利·内格雷斯科（Henri Negresco）是罗马尼亚移民，从酒店门童做到布加勒斯特最年轻的酒店经理，然后来到尼斯。1913 年，他请建筑师爱德华·尼尔曼斯（Édouard Niermans）在盎格鲁大道上盖了这座酒店，想让冬天的富人来尼斯住得体面。</p>
+    <p><span class="lbl">为什么留到今天 ·</span> 1957 年，让娜·奥吉耶（Jeanne Augier）买下它，此后六十年一间一间修、一件一件收藏，把它变成了法国历史建筑（Monument historique）。今天它仍是家族独立经营，不属于任何连锁。</p>
+    <p><span class="lbl">一段历史 ·</span> 粉色穹顶是尼斯的标志之一。里面收藏约六千件艺术品，从十七世纪到现代，包括达利（Salvador Dalí）的作品；楼梯间那盏枝形吊灯来自十六世纪的威尼斯。<b>你今晚就住这里。</b></p>
+  </div>
+</div>
+<div class="mapunit"><div class="maprow"><div class="mapbox"><svg class="cm" viewBox="156.4 124.6 1282.0 1056.4" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet"><rect x="0" y="0" width="1536" height="1280" fill="#f1ece6"/><image x="0" y="0" width="256" height="256" href="images/tiles/nice-coast/12_2128_1492.png"/><image x="0" y="256" width="256" height="256" href="images/tiles/nice-coast/12_2128_1493.png"/><image x="0" y="512" width="256" height="256" href="images/tiles/nice-coast/12_2128_1494.png"/><image x="0" y="768" width="256" height="256" href="images/tiles/nice-coast/12_2128_1495.png"/><image x="0" y="1024" width="256" height="256" href="images/tiles/nice-coast/12_2128_1496.png"/><image x="256" y="0" width="256" height="256" href="images/tiles/nice-coast/12_2129_1492.png"/><image x="256" y="256" width="256" height="256" href="images/tiles/nice-coast/12_2129_1493.png"/><image x="256" y="512" width="256" height="256" href="images/tiles/nice-coast/12_2129_1494.png"/><image x="256" y="768" width="256" height="256" href="images/tiles/nice-coast/12_2129_1495.png"/><image x="256" y="1024" width="256" height="256" href="images/tiles/nice-coast/12_2129_1496.png"/><image x="512" y="0" width="256" height="256" href="images/tiles/nice-coast/12_2130_1492.png"/><image x="512" y="256" width="256" height="256" href="images/tiles/nice-coast/12_2130_1493.png"/><image x="512" y="512" width="256" height="256" href="images/tiles/nice-coast/12_2130_1494.png"/><image x="512" y="768" width="256" height="256" href="images/tiles/nice-coast/12_2130_1495.png"/><image x="512" y="1024" width="256" height="256" href="images/tiles/nice-coast/12_2130_1496.png"/><image x="768" y="0" width="256" height="256" href="images/tiles/nice-coast/12_2131_1492.png"/><image x="768" y="256" width="256" height="256" href="images/tiles/nice-coast/12_2131_1493.png"/><image x="768" y="512" width="256" height="256" href="images/tiles/nice-coast/12_2131_1494.png"/><image x="768" y="768" width="256" height="256" href="images/tiles/nice-coast/12_2131_1495.png"/><image x="768" y="1024" width="256" height="256" href="images/tiles/nice-coast/12_2131_1496.png"/><image x="1024" y="0" width="256" height="256" href="images/tiles/nice-coast/12_2132_1492.png"/><image x="1024" y="256" width="256" height="256" href="images/tiles/nice-coast/12_2132_1493.png"/><image x="1024" y="512" width="256" height="256" href="images/tiles/nice-coast/12_2132_1494.png"/><image x="1024" y="768" width="256" height="256" href="images/tiles/nice-coast/12_2132_1495.png"/><image x="1024" y="1024" width="256" height="256" href="images/tiles/nice-coast/12_2132_1496.png"/><image x="1280" y="0" width="256" height="256" href="images/tiles/nice-coast/12_2133_1492.png"/><image x="1280" y="256" width="256" height="256" href="images/tiles/nice-coast/12_2133_1493.png"/><image x="1280" y="512" width="256" height="256" href="images/tiles/nice-coast/12_2133_1494.png"/><image x="1280" y="768" width="256" height="256" href="images/tiles/nice-coast/12_2133_1495.png"/><image x="1280" y="1024" width="256" height="256" href="images/tiles/nice-coast/12_2133_1496.png"/><rect x="0" y="0" width="1536" height="1280" fill="#ffffff" opacity="0.58"/><circle cx="710.8" cy="560.3" r="20.7" fill="#ffffff" stroke="#8d7a6e" stroke-width="5.9" opacity="0.95"/><text x="710.8" y="569.2" font-size="18.3" fill="#6f5b50" text-anchor="middle" font-family="PingFang SC,Helvetica,Arial">尼斯</text><g class="pin" data-num="4" data-name="埃兹"><circle class="halo" cx="962.5" cy="431.8" r="58.3" fill="#b4573f" opacity="0"/><circle cx="962.5" cy="431.8" r="27.8" fill="#b4573f" stroke="#ffffff" stroke-width="5.9"/><text x="962.5" y="441.3" font-size="26.6" fill="#ffffff" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">4</text></g><g class="pin" data-num="5" data-name="蒙特卡洛赌场"><circle class="halo" cx="1156.5" cy="383.0" r="58.3" fill="#b4573f" opacity="0"/><circle cx="1156.5" cy="383.0" r="27.8" fill="#b4573f" stroke="#ffffff" stroke-width="5.9"/><text x="1156.5" y="392.6" font-size="26.6" fill="#ffffff" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">5</text></g><g class="pin" data-num="10" data-name="昂蒂布"><circle class="halo" cx="273.4" cy="1022.4" r="50.9" fill="#b4573f" opacity="0"/><circle cx="273.4" cy="1022.4" r="24.2" fill="#ffffff" stroke="#b4573f" stroke-width="5.9"/><text x="273.4" y="1030.6" font-size="23.0" fill="#b4573f" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">10</text></g><g class="pin" data-num="11" data-name="芒通"><circle class="halo" cx="1358.1" cy="242.3" r="50.9" fill="#b4573f" opacity="0"/><circle cx="1358.1" cy="242.3" r="24.2" fill="#ffffff" stroke="#b4573f" stroke-width="5.9"/><text x="1358.1" y="250.6" font-size="23.0" fill="#b4573f" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">11</text></g><g class="pin" data-num="12" data-name="圣保罗德旺斯"><circle class="halo" cx="265.8" cy="552.7" r="50.9" fill="#b4573f" opacity="0"/><circle cx="265.8" cy="552.7" r="24.2" fill="#ffffff" stroke="#b4573f" stroke-width="5.9"/><text x="265.8" y="561.0" font-size="23.0" fill="#b4573f" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">12</text></g><g transform="translate(1489,53)"><circle r="32.5" fill="#ffffff" opacity="0.85"/><path d="M0,-17.7 L11.2,10.6 L0,4.7 L-11.2,10.6 Z" fill="#7d6a5f"/><text x="0" y="28.1" font-size="20.7" fill="#7d6a5f" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">N</text></g><g><rect x="41.4" y="1200.2" width="59.8" height="44.3" fill="#ffffff" opacity="0.8"/><line x1="53.2" y1="1232.7" x2="89.4" y2="1232.7" stroke="#6b5a50" stroke-width="5.9"/><line x1="53.2" y1="1223.9" x2="53.2" y2="1241.6" stroke="#6b5a50" stroke-width="3.5"/><line x1="89.4" y1="1223.9" x2="89.4" y2="1241.6" stroke="#6b5a50" stroke-width="3.5"/><text x="71.3" y="1220.9" font-size="20.7" fill="#6b5a50" text-anchor="middle" font-family="Helvetica,Arial">1 km</text></g><text x="1518.3" y="1266.7" font-size="16.5" fill="#5a5148" text-anchor="end" font-family="Helvetica,Arial" opacity="0.75">© OpenStreetMap contributors</text></svg></div><div class="maplegend"><div class="lg" data-num="4"><span class="badge">4</span>埃兹</div><div class="lg" data-num="5"><span class="badge">5</span>蒙特卡洛赌场</div><div class="lg" data-num="10"><span class="badge c">10</span>昂蒂布</div><div class="lg" data-num="11"><span class="badge c">11</span>芒通</div><div class="lg" data-num="12"><span class="badge c">12</span>圣保罗德旺斯</div></div></div></div><p class="mapnote">把尼斯放回整条海岸线上看 —— <b>埃兹、摩纳哥、昂蒂布、芒通、圣保罗德旺斯都在这张图上</b>。</p>
+<div class="takeaway"><b>如果只记一件事：</b>尼斯在 1860 年之前<b>是意大利的</b>。老城的窄巷、赭色墙面、市场的节奏，都是萨伏依留下的 —— 它不是“法国南部的城市”，是一座变成了法国的意大利城市。</div>
+<div class="cands"><h4>备选 · 还有力气就去</h4><div class="note">这些没有排进行程，但都在动线上。看时间和体力临时决定，不需要现在订。</div>
+<div class="cand">
+  <div class="tx2">
+    <div class="cn2"><span class="badge c">7</span>马蒂斯美术馆</div>
+    <div class="nm2">Musée Matisse &nbsp;·&nbsp; <i>Musée Matisse</i> &nbsp;<span class="yr2">1963</span></div>
+    <p>马蒂斯 1917 年搬到尼斯，住了三十多年，说"是尼斯的光让我留了下来"。这座美术馆在他去世后开馆，藏着他从早期到剪纸时期的作品。</p>
+    <p class="win"><b>怎么塞进去 ·</b> 11/20 下雨的话，这是最好的室内备选（西米耶山上，公交 15 分钟）。</p>
+  </div>
+</div>
+<div class="cand">
+  <div class="tx2">
+    <div class="cn2"><span class="badge c">8</span>夏加尔国家博物馆</div>
+    <div class="nm2">Musée national Marc Chagall &nbsp;·&nbsp; <i>Musée national Marc Chagall</i> &nbsp;<span class="yr2">1973</span></div>
+    <p>夏加尔在世时亲自参与设计的博物馆，十七幅《圣经消息》组画围成一个大厅。他说这些画是"给所有人的礼物"。</p>
+    <p class="win"><b>怎么塞进去 ·</b> 11/20 与马蒂斯同一天，两馆步行十分钟。</p>
+  </div>
+</div>
+<div class="cand">
+  <div class="tx2">
+    <div class="cn2"><span class="badge c">9</span>俄罗斯东正教大教堂</div>
+    <div class="nm2">Russian Orthodox Cathedral &nbsp;·&nbsp; <i>Cathédrale orthodoxe russe Saint-Nicolas</i> &nbsp;<span class="yr2">1912</span></div>
+    <p>1912 年建，六个洋葱顶。十九世纪俄国贵族冬天来尼斯避寒，在这里留下了一座教堂 —— 尼斯"俄国味"的证明。</p>
+    <p class="win"><b>怎么塞进去 ·</b> 11/19 傍晚到达后，从 Negresco 走过去二十分钟。</p>
+  </div>
+</div>
+<div class="cand">
+  <div class="tx2">
+    <div class="cn2"><span class="badge c">10</span>昂蒂布</div>
+    <div class="nm2">Antibes &nbsp;·&nbsp; <i>Antibes</i> &nbsp;<span class="yr2">古希腊</span></div>
+    <p>毕加索 1946 年在这里住了半年，在格里马尔迪城堡（Château Grimaldi）画了一整批画，后来那座城堡就成了毕加索美术馆。海防城墙上看地中海，比尼斯安静。</p>
+    <p class="win"><b>怎么塞进去 ·</b> 11/20 西线：坐 TER 火车 20 分钟。</p>
+  </div>
+</div>
+<div class="cand">
+  <div class="tx2">
+    <div class="cn2"><span class="badge c">11</span>芒通</div>
+    <div class="nm2">Menton &nbsp;·&nbsp; <i>Menton</i> &nbsp;<span class="yr2">中世纪</span></div>
+    <p>贴着意大利边境的小城，柠檬之城，二月的柠檬节。让·科克托（Jean Cocteau）晚年在这里画了婚礼厅。老城的赭色房子层层叠到海边。</p>
+    <p class="win"><b>怎么塞进去 ·</b> 11/20 东线，从摩纳哥再坐 10 分钟火车。</p>
+  </div>
+</div>
+<div class="cand">
+  <div class="tx2">
+    <div class="cn2"><span class="badge c">12</span>圣保罗德旺斯</div>
+    <div class="nm2">Saint-Paul-de-Vence &nbsp;·&nbsp; <i>Saint-Paul-de-Vence</i> &nbsp;<span class="yr2">中世纪</span></div>
+    <p>山顶的城墙小村，夏加尔、马蒂斯、毕加索都住过。村外的马格基金会（Fondation Maegret）是蔚蓝海岸最好的现代艺术馆之一。</p>
+    <p class="win"><b>怎么塞进去 ·</b> 11/20 内陆线，公交 400 路约 40 分钟。</p>
+  </div>
+</div></div>
+
+<h2>三、罗马 <span class="en">ROME · 三层城市</span></h2>
+<p class="lede">罗马是三座城市叠在一起：古罗马（共和国与帝国）、基督教罗马（教廷与巴洛克）、现代意大利首都。
+公元前 509 年建立共和国，公元前 27 年成为帝国，公元 476 年西罗马灭亡 —— 之后是教皇的城，直到 1870 年才成为统一的意大利的首都。
+关键的时间感：你 11/22 上午在斗兽场（公元 80 年），下午在万神殿（公元 125 年），晚上在特雷维喷泉（1762 年）—— 一天走过一千七百年。</p>
+<div class="mapunit"><div class="maprow"><div class="mapbox"><svg class="cm" viewBox="161.3 25.9 585.7 640.9" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet"><rect x="0" y="0" width="768" height="768" fill="#f1ece6"/><image x="0" y="0" width="256" height="256" href="images/tiles/rome/14_8758_6087.png"/><image x="0" y="256" width="256" height="256" href="images/tiles/rome/14_8758_6088.png"/><image x="0" y="512" width="256" height="256" href="images/tiles/rome/14_8758_6089.png"/><image x="256" y="0" width="256" height="256" href="images/tiles/rome/14_8759_6087.png"/><image x="256" y="256" width="256" height="256" href="images/tiles/rome/14_8759_6088.png"/><image x="256" y="512" width="256" height="256" href="images/tiles/rome/14_8759_6089.png"/><image x="512" y="0" width="256" height="256" href="images/tiles/rome/14_8760_6087.png"/><image x="512" y="256" width="256" height="256" href="images/tiles/rome/14_8760_6088.png"/><image x="512" y="512" width="256" height="256" href="images/tiles/rome/14_8760_6089.png"/><rect x="0" y="0" width="768" height="768" fill="#ffffff" opacity="0.58"/><g class="pin" data-num="1" data-name="博尔盖塞美术馆"><circle class="halo" cx="648.7" cy="69.3" r="29.2" fill="#b4573f" opacity="0"/><circle cx="648.7" cy="69.3" r="13.9" fill="#b4573f" stroke="#ffffff" stroke-width="3.0"/><text x="648.7" y="74.1" font-size="13.3" fill="#ffffff" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">1</text></g><g class="pin" data-num="2" data-name="西班牙广场"><circle class="halo" cx="533.3" cy="197.7" r="29.2" fill="#b4573f" opacity="0"/><circle cx="533.3" cy="197.7" r="13.9" fill="#b4573f" stroke="#ffffff" stroke-width="3.0"/><text x="533.3" y="202.5" font-size="13.3" fill="#ffffff" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">2</text></g><g class="pin" data-num="3" data-name="特雷维喷泉"><circle class="halo" cx="545.0" cy="277.6" r="29.2" fill="#b4573f" opacity="0"/><circle cx="545.0" cy="277.6" r="13.9" fill="#b4573f" stroke="#ffffff" stroke-width="3.0"/><text x="545.0" y="282.3" font-size="13.3" fill="#ffffff" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">3</text></g><g class="pin" data-num="4" data-name="斗兽场"><circle class="halo" cx="648.7" cy="445.0" r="29.2" fill="#b4573f" opacity="0"/><circle cx="648.7" cy="445.0" r="13.9" fill="#b4573f" stroke="#ffffff" stroke-width="3.0"/><text x="648.7" y="449.8" font-size="13.3" fill="#ffffff" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">4</text></g><g class="pin" data-num="5" data-name="古罗马广场"><circle class="halo" cx="568.3" cy="409.0" r="29.2" fill="#b4573f" opacity="0"/><circle cx="568.3" cy="409.0" r="13.9" fill="#b4573f" stroke="#ffffff" stroke-width="3.0"/><text x="568.3" y="413.8" font-size="13.3" fill="#ffffff" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">5</text></g><g class="pin" data-num="6" data-name="万神殿"><circle class="halo" cx="470.4" cy="313.6" r="29.2" fill="#b4573f" opacity="0"/><circle cx="470.4" cy="313.6" r="13.9" fill="#b4573f" stroke="#ffffff" stroke-width="3.0"/><text x="470.4" y="318.3" font-size="13.3" fill="#ffffff" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">6</text></g><g class="pin" data-num="7" data-name="纳沃纳广场"><circle class="halo" cx="426.1" cy="304.2" r="29.2" fill="#b4573f" opacity="0"/><circle cx="426.1" cy="304.2" r="13.9" fill="#b4573f" stroke="#ffffff" stroke-width="3.0"/><text x="426.1" y="309.0" font-size="13.3" fill="#ffffff" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">7</text></g><g class="pin" data-num="8" data-name="西斯廷礼拜堂"><circle class="halo" cx="209.4" cy="246.2" r="29.2" fill="#b4573f" opacity="0"/><circle cx="209.4" cy="246.2" r="13.9" fill="#b4573f" stroke="#ffffff" stroke-width="3.0"/><text x="209.4" y="251.0" font-size="13.3" fill="#ffffff" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">8</text></g><g class="pin" data-num="9" data-name="圣彼得大教堂"><circle class="halo" cx="202.5" cy="257.2" r="29.2" fill="#b4573f" opacity="0"/><circle cx="202.5" cy="257.2" r="13.9" fill="#b4573f" stroke="#ffffff" stroke-width="3.0"/><text x="202.5" y="262.0" font-size="13.3" fill="#ffffff" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">9</text></g><g class="pin" data-num="10" data-name="圣天使堡"><circle class="halo" cx="346.9" cy="243.1" r="29.2" fill="#b4573f" opacity="0"/><circle cx="346.9" cy="243.1" r="13.9" fill="#b4573f" stroke="#ffffff" stroke-width="3.0"/><text x="346.9" y="247.3" font-size="11.5" fill="#ffffff" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">10</text></g><g class="pin" data-num="11" data-name="特拉斯提弗列"><circle class="halo" cx="380.7" cy="454.4" r="29.2" fill="#b4573f" opacity="0"/><circle cx="380.7" cy="454.4" r="13.9" fill="#b4573f" stroke="#ffffff" stroke-width="3.0"/><text x="380.7" y="458.6" font-size="11.5" fill="#ffffff" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">11</text></g><g class="pin" data-num="12" data-name="鲜花广场"><circle class="halo" cx="416.8" cy="360.5" r="25.4" fill="#b4573f" opacity="0"/><circle cx="416.8" cy="360.5" r="12.1" fill="#ffffff" stroke="#b4573f" stroke-width="3.0"/><text x="416.8" y="364.7" font-size="11.5" fill="#b4573f" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">12</text></g><g class="pin" data-num="13" data-name="圣克莱门特教堂"><circle class="halo" cx="713.9" cy="504.5" r="25.4" fill="#b4573f" opacity="0"/><circle cx="713.9" cy="504.5" r="12.1" fill="#ffffff" stroke="#b4573f" stroke-width="3.0"/><text x="713.9" y="508.7" font-size="11.5" fill="#b4573f" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">13</text></g><g class="pin" data-num="14" data-name="卡拉卡拉浴场"><circle class="halo" cx="649.8" cy="620.3" r="25.4" fill="#b4573f" opacity="0"/><circle cx="649.8" cy="620.3" r="12.1" fill="#ffffff" stroke="#b4573f" stroke-width="3.0"/><text x="649.8" y="624.5" font-size="11.5" fill="#b4573f" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">14</text></g><g class="pin" data-num="15" data-name="平乔山"><circle class="halo" cx="462.3" cy="110.1" r="25.4" fill="#b4573f" opacity="0"/><circle cx="462.3" cy="110.1" r="12.1" fill="#ffffff" stroke="#b4573f" stroke-width="3.0"/><text x="462.3" y="114.2" font-size="11.5" fill="#b4573f" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">15</text></g><g transform="translate(744,27)"><circle r="16.2" fill="#ffffff" opacity="0.85"/><path d="M0,-8.9 L5.6,5.3 L0,2.4 L-5.6,5.3 Z" fill="#7d6a5f"/><text x="0" y="14.0" font-size="10.3" fill="#7d6a5f" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">N</text></g><g><rect x="20.7" y="728.1" width="152.5" height="22.2" fill="#ffffff" opacity="0.8"/><line x1="26.6" y1="744.4" x2="167.2" y2="744.4" stroke="#6b5a50" stroke-width="3.0"/><line x1="26.6" y1="739.9" x2="26.6" y2="748.8" stroke="#6b5a50" stroke-width="1.8"/><line x1="167.2" y1="739.9" x2="167.2" y2="748.8" stroke="#6b5a50" stroke-width="1.8"/><text x="96.9" y="738.5" font-size="10.3" fill="#6b5a50" text-anchor="middle" font-family="Helvetica,Arial">1 km</text></g><text x="759.1" y="761.4" font-size="8.3" fill="#5a5148" text-anchor="end" font-family="Helvetica,Arial" opacity="0.75">© OpenStreetMap contributors</text></svg></div><div class="maplegend"><div class="lg" data-num="1"><span class="badge">1</span>博尔盖塞美术馆</div><div class="lg" data-num="2"><span class="badge">2</span>西班牙广场</div><div class="lg" data-num="3"><span class="badge">3</span>特雷维喷泉</div><div class="lg" data-num="4"><span class="badge">4</span>斗兽场</div><div class="lg" data-num="5"><span class="badge">5</span>古罗马广场</div><div class="lg" data-num="6"><span class="badge">6</span>万神殿</div><div class="lg" data-num="7"><span class="badge">7</span>纳沃纳广场</div><div class="lg" data-num="8"><span class="badge">8</span>西斯廷礼拜堂</div><div class="lg" data-num="9"><span class="badge">9</span>圣彼得大教堂</div><div class="lg" data-num="10"><span class="badge">10</span>圣天使堡</div><div class="lg" data-num="11"><span class="badge">11</span>特拉斯提弗列</div><div class="lg" data-num="12"><span class="badge c">12</span>鲜花广场</div><div class="lg" data-num="13"><span class="badge c">13</span>圣克莱门特教堂</div><div class="lg" data-num="14"><span class="badge c">14</span>卡拉卡拉浴场</div><div class="lg" data-num="15"><span class="badge c">15</span>平乔山</div></div></div></div>
+<p class="mapnote"><b>红色实心</b>＝行程内的景点，<b>红圈</b>＝备选。数字和下面景点的编号对应。<b>用浏览器打开时，把鼠标移到右边名字上，图上对应的点会亮起</b>（点一下跳到该景点）。地图数据 © OpenStreetMap 贡献者。</p>
+
+<div class="site" id="s1">
+  <div class="pc"><img class="pf" src="images/19.jpg" data-full="images/full/19.jpg" alt="Galleria Borghese"></div>
+  <div class="tx">
+    <div class="cn"><span class="badge">1</span>博尔盖塞美术馆</div>
+    <div class="nm">Galleria Borghese &nbsp;·&nbsp; <i>Galleria Borghese</i></div>
+    <div class="yr">1606–1633</div>
+    <div class="lead">一位红衣主教的私人别墅，今天装着全世界最好的贝尼尼。</div>
+    <p><span class="lbl">它是怎么来的 ·</span> 西皮奥内·博尔盖塞（Scipione Borghese）是教皇保罗五世的侄子，也是那个时代最贪心的收藏家之一 —— 他想要的艺术品，要么买下来，要么直接没收。1606 年起，他在罗马北边的平乔山（Pincio）上盖别墅，用来放雕塑和画。</p>
+    <p><span class="lbl">为什么留到今天 ·</span> 博尔盖塞家族后来没落了。1807 年，家族把大批古代雕塑卖给拿破仑的妹妹 —— 那批东西今天在卢浮宫，叫"博尔盖塞收藏"。1902 年，意大利政府买下别墅和剩下的藏品，它才成为国家博物馆，从此一件都不能出这个门。</p>
+    <p><span class="lbl">一段历史 ·</span> 贝尼尼（Gian Lorenzo Bernini）二十四岁雕出《阿波罗与达芙妮》（Apollo e Dafne）：达芙妮的手指正在变成树叶，脚趾正在扎进泥土。另一件《普洛塞皮娜之劫》（Ratto di Proserpina）里，普鲁托的手指陷进了少女的皮肤 —— 大理石被雕得像肉。还有六幅卡拉瓦乔。</p>
+  </div>
+</div>
+
+<div class="site" id="s2">
+  <div class="pc"><img class="pf" src="images/20.jpg" data-full="images/full/20.jpg" alt="Spanish Steps"></div>
+  <div class="tx">
+    <div class="cn"><span class="badge">2</span>西班牙广场</div>
+    <div class="nm">Spanish Steps &nbsp;·&nbsp; <i>Scalinata di Trinità dei Monti</i></div>
+    <div class="yr">1725</div>
+    <div class="lead">法国教堂的地基上，修了一段以西班牙命名的台阶。</div>
+    <p><span class="lbl">它是怎么来的 ·</span> 山上的圣三一教堂（Trinità dei Monti）是法国人建的，山下的广场归西班牙使馆管 —— 一个坡把两个国家连在一起。1723 到 1725 年，建筑师弗朗切斯科·德·桑克蒂斯（Francesco de Sanctis）用一位法国外交官留下的遗产修了这段台阶。</p>
+    <p><span class="lbl">为什么留到今天 ·</span> 它一直是罗马人聚会、游客歇脚的地方。2016 年大清洗之后，2019 年起禁止坐在台阶上 —— 罚款不高，但警察真的会吹哨子。</p>
+    <p><span class="lbl">一段历史 ·</span> 一百三十五级台阶，从山下的破船喷泉（Fontana della Barcaccia，贝尼尼的父亲彼得罗做的）一路通到教堂。上面的方尖碑是罗马人从埃及抢来的，叫萨卢斯蒂亚诺方尖碑（Obelisco Sallustiano）。台阶正对着孔多蒂街（Via dei Condotti），是罗马最贵的购物街。</p>
+  </div>
+</div>
+
+<div class="site" id="s3">
+  <div class="pc"><img class="pf" src="images/21.jpg" data-full="images/full/21.jpg" alt="Trevi Fountain"></div>
+  <div class="tx">
+    <div class="cn"><span class="badge">3</span>特雷维喷泉</div>
+    <div class="nm">Trevi Fountain &nbsp;·&nbsp; <i>Fontana di Trevi</i></div>
+    <div class="yr">1732–1762</div>
+    <div class="lead">罗马最大的巴洛克喷泉，建在一条两千年前的水道终点上。</div>
+    <p><span class="lbl">它是怎么来的 ·</span> 公元前 19 年，罗马人修了一条输水渠叫处女水道（Aqua Virgo），把水从东边引进城。中世纪以后水道坏了，1453 年教皇尼古拉五世把它修好，在终点做了一个简单的喷泉。1732 年，教皇克雷芒十二世办设计竞赛，尼古拉·萨尔维（Nicola Salvi）的方案胜出。</p>
+    <p><span class="lbl">为什么留到今天 ·</span> 水道到今天还在供水 —— 这是它最了不起的地方。喷泉不是装饰，是一座仍在工作的城市基础设施的出口。</p>
+    <p><span class="lbl">一段历史 ·</span> 整个立面是一出戏：海神站在贝壳战车上，两匹马一匹平静一匹狂躁，代表海的两种脾气；两侧壁龛里是丰饶与健康女神。名字"Trevi"来自拉丁语 trivium，意思是"三条路的交汇处"。每年游客扔进池子的硬币约有一百多万欧元，全部捐给慈善机构。</p>
+  </div>
+</div>
+
+<div class="site" id="s4">
+  <div class="pc"><img class="pf" src="images/22.jpg" data-full="images/full/22.jpg" alt="Colosseum"></div>
+  <div class="tx">
+    <div class="cn"><span class="badge">4</span>斗兽场</div>
+    <div class="nm">Colosseum &nbsp;·&nbsp; <i>Colosseo</i></div>
+    <div class="yr">80 AD</div>
+    <div class="lead">罗马最大的竞技场，建在暴君尼禄的私人湖上。</div>
+    <p><span class="lbl">它是怎么来的 ·</span> 公元 64 年罗马大火之后，尼禄占了市中心一大片地盖自己的金宫（Domus Aurea），宫里有个湖。尼禄死后，韦斯巴芗（Vespasian）皇帝把湖填了，在上面盖竞技场 —— 把暴君的私人财产还给公众，这是最直白的政治宣言。钱来自公元 70 年洗劫耶路撒冷。公元 80 年，他儿子提图斯主持落成，办了百日庆典。</p>
+    <p><span class="lbl">为什么留到今天 ·</span> 地震塌了一半，之后几百年罗马人把它当采石场，石头被搬去盖教堂和宫殿。1749 年，教皇本笃十四世把它祝圣为圣地，说这里是基督徒殉道之处 —— 采石才停下来。这个说法历史上有争议，但它确实救了这座建筑。</p>
+    <p><span class="lbl">一段历史 ·</span> 五万个座位，八十个拱门，按社会阶层分区，票上印着入口编号 —— 今天的体育场还在用同一套逻辑。地下那层叫 hypogeum，角斗士和野兽从这里被吊上来。座位石头上还留着当年观众刻的名字。</p>
+  </div>
+</div>
+
+<div class="site" id="s5">
+  <div class="pc"><img class="pf" src="images/23.jpg" data-full="images/full/23.jpg" alt="Roman Forum"></div>
+  <div class="tx">
+    <div class="cn"><span class="badge">5</span>古罗马广场</div>
+    <div class="nm">Roman Forum &nbsp;·&nbsp; <i>Foro Romano</i></div>
+    <div class="yr">公元前 6 世纪</div>
+    <div class="lead">罗马共和国和帝国一千年的政治中心，现在是一片废墟。</div>
+    <p><span class="lbl">它是怎么来的 ·</span> 这里原本是沼泽。公元前六世纪，罗马人修了下水道（Cloaca Maxima）把水排干，山谷变成了集市和集会场所 —— 所以它叫 Forum，就是市场的意思。之后一千年，元老院、神庙、凯旋门、法庭一层层往上盖。</p>
+    <p><span class="lbl">为什么留到今天 ·</span> 帝国垮了以后，广场被土埋了十几米，中世纪的人在废墟上放牛、盖小教堂。十九世纪开始系统发掘，我们今天看到的"废墟感"，其实是挖掘出来的结果。</p>
+    <p><span class="lbl">一段历史 ·</span> 提图斯凯旋门（Arco di Tito）上刻着罗马士兵扛着从耶路撒冷圣殿抢来的战利品 —— 包括那盏七枝烛台。这是现存最早描绘它的图像。旁边的帕拉蒂尼山（Palatino）是传说中罗慕路斯建城的地方，后来成了皇帝的宫殿区，"palace"这个词就是从这座山来的。</p>
+  </div>
+</div>
+
+<div class="site" id="s6">
+  <div class="pc"><img class="pf" src="images/24.jpg" data-full="images/full/24.jpg" alt="Pantheon"></div>
+  <div class="tx">
+    <div class="cn"><span class="badge">6</span>万神殿</div>
+    <div class="nm">Pantheon &nbsp;·&nbsp; <i>Pantheon</i></div>
+    <div class="yr">125 AD</div>
+    <div class="lead">一千九百年后仍然站着、仍然在用的一座罗马建筑。</div>
+    <p><span class="lbl">它是怎么来的 ·</span> 公元前 27 年，屋大维的副手阿格里帕（Marcus Agrippa）建了第一座万神殿，献给"所有的神"。公元 80 年被烧毁，图拉真时期重建又遭雷击，现在的建筑是哈德良皇帝在公元 113 到 125 年间重新盖的。</p>
+    <p><span class="lbl">为什么留到今天 ·</span> 它没被拆，是因为它一直在用。公元 609 年，拜占庭皇帝把它送给教皇，改成教堂（Santa Maria ad Martyres）—— 变成教堂，就没人敢拆它的石头。文艺复兴的建筑师们都来量过它，布鲁内莱斯基的穹顶就是从这里学的。</p>
+    <p><span class="lbl">一段历史 ·</span> 穹顶直径 43.3 米，顶部圆洞（oculus）直径 8.9 米，是唯一的采光口 —— 下雨会飘进来，地面有排水孔。它至今仍是世界上最大的无钢筋混凝土穹顶。拉斐尔葬在这里，墓上刻着一句话："这里躺着拉斐尔，大自然害怕被他超越，他活着时大自然也怕输给他。"</p>
+  </div>
+</div>
+
+<div class="site" id="s7">
+  <div class="pc"><img class="pf" src="images/25.jpg" data-full="images/full/25.jpg" alt="Piazza Navona"></div>
+  <div class="tx">
+    <div class="cn"><span class="badge">7</span>纳沃纳广场</div>
+    <div class="nm">Piazza Navona &nbsp;·&nbsp; <i>Piazza Navona</i></div>
+    <div class="yr">1 世纪 / 1651</div>
+    <div class="lead">广场的形状不是设计的，是一座古罗马竞技场的跑道。</div>
+    <p><span class="lbl">它是怎么来的 ·</span> 公元 86 年，图密善皇帝在这里建了一座竞技场（Stadium of Domitian），用来办希腊式的田径赛。中世纪竞技场的石头被拆去盖房子，但围墙的弧形留在了街巷的走向里。</p>
+    <p><span class="lbl">为什么留到今天 ·</span> 十七世纪中叶，教皇英诺森十世（Innocent X）把这里改造成巴洛克广场 —— 他家是潘菲利家族（Pamphili），宫殿就在旁边。广场的格局从那以后没再变。</p>
+    <p><span class="lbl">一段历史 ·</span> 贝尼尼的四河喷泉（Fontana dei Quattro Fiumi）代表当时已知的四大洲四条河：多瑙河、尼罗河、恒河、拉普拉塔河。尼罗河雕像蒙着脸，传说是在表示"看不见"对面的圣阿涅塞教堂（Sant'Agnese in Agone）—— 那是他的死对头博罗米尼（Borromini）设计的。这个说法是后人编的，但罗马人就爱这种故事。</p>
+  </div>
+</div>
+
+<div class="site" id="s8">
+  <div class="pc"><img class="pf" src="images/26.jpg" data-full="images/full/26.jpg" alt="Sistine Chapel"></div>
+  <div class="tx">
+    <div class="cn"><span class="badge">8</span>西斯廷礼拜堂</div>
+    <div class="nm">Sistine Chapel &nbsp;·&nbsp; <i>Cappella Sistina</i></div>
+    <div class="yr">1508–1541</div>
+    <div class="lead">米开朗基罗一个人，在同一个空间里画了相隔二十五年的两幅巨作。</div>
+    <p><span class="lbl">它是怎么来的 ·</span> 1473 到 1481 年，教皇西斯笃四世（Sixtus IV）盖了这座礼拜堂 —— 名字就是从他那来的，它是教皇的私人礼拜堂，也是选举教皇的地方。1508 年，尤利乌斯二世逼着不情愿的米开朗基罗放下雕塑，去画天顶。</p>
+    <p><span class="lbl">为什么留到今天 ·</span> 它是教廷的核心空间，几百年里没人动过它的结构。1980 到 1994 年做过一次大清洗，把几百年的烛烟和灰洗掉，颜色才回到当年。</p>
+    <p><span class="lbl">一段历史 ·</span> 天顶画四百多个人物，从创世纪讲到诺亚。看的时候要<b>从祭坛往回看</b>，顺序才对。《创造亚当》（Creazione di Adamo）里两根手指之间那一厘米，是全西方艺术最著名的一段空白。祭坛墙的《最后的审判》（Giudizio universale）是 1536 到 1541 年画的，米开朗基罗把批评他的人画成了受罚的灵魂。</p>
+  </div>
+</div>
+
+<div class="site" id="s9">
+  <div class="pc"><img class="pf" src="images/27.jpg" data-full="images/full/27.jpg" alt="St. Peter&#x27;s Basilica"></div>
+  <div class="tx">
+    <div class="cn"><span class="badge">9</span>圣彼得大教堂</div>
+    <div class="nm">St. Peter's Basilica &nbsp;·&nbsp; <i>Basilica di San Pietro</i></div>
+    <div class="yr">1506–1626</div>
+    <div class="lead">建在圣彼得的墓上，一百二十年、十多位建筑师接力。</div>
+    <p><span class="lbl">它是怎么来的 ·</span> 公元四世纪，君士坦丁大帝在圣彼得的墓上盖了老圣彼得教堂。一千多年后它快塌了，1506 年教皇尤利乌斯二世决定重建 —— 布拉曼特（Bramante）设计希腊十字平面，然后米开朗基罗接手穹顶，马代尔诺（Carlo Maderno）又把平面改成长厅。1626 年祝圣。</p>
+    <p><span class="lbl">为什么留到今天 ·</span> 它靠的是天主教会的资源 —— 卖赎罪券筹钱，这也是马丁·路德发起宗教改革的原因之一。一座教堂的账本，改写了欧洲历史。</p>
+    <p><span class="lbl">一段历史 ·</span> 穹顶直径 42 米，比万神殿小一点，但尖顶到地面 136 米。米开朗基罗的《圣殇》（Pietà）在进门右手边，1972 年被人用锤子砸过，现在隔着防弹玻璃。地面上标着老教堂的尺寸线 —— 现在的教堂是它的四倍大。</p>
+  </div>
+</div>
+
+<div class="site" id="s10">
+  <div class="pc"><img class="pf" src="images/28.jpg" data-full="images/full/28.jpg" alt="Castel Sant&#x27;Angelo"></div>
+  <div class="tx">
+    <div class="cn"><span class="badge">10</span>圣天使堡</div>
+    <div class="nm">Castel Sant'Angelo &nbsp;·&nbsp; <i>Castel Sant'Angelo</i></div>
+    <div class="yr">139 AD</div>
+    <div class="lead">哈德良皇帝的陵墓，后来变成教皇的堡垒 —— 同一栋楼，四种用途。</div>
+    <p><span class="lbl">它是怎么来的 ·</span> 公元 123 到 139 年，哈德良皇帝在台伯河西岸给自己修陵墓，一座巨大的圆柱形建筑，顶上立着四马战车。他和之后几位皇帝的骨灰都放在这里。</p>
+    <p><span class="lbl">为什么留到今天 ·</span> 公元 271 年，奥勒良皇帝把它并进城墙，变成要塞。公元 590 年，教皇格里高利一世说在堡顶看见天使长米迦勒收剑，瘟疫随即结束 —— 从此它叫"圣天使堡"（Castel Sant'Angelo）。之后一千年，它一直是教皇的堡垒、监狱和藏身之所。</p>
+    <p><span class="lbl">一段历史 ·</span> 从梵蒂冈到城堡有一条八百米的空中密道，叫 Passetto di Borgo，教皇遇险时从这里逃。1527 年罗马之劫，教皇克雷芒七世就是靠它躲进来的。普契尼的歌剧《托斯卡》最后一幕就发生在堡顶 —— 女主角从那里跳下去。</p>
+  </div>
+</div>
+
+<div class="site" id="s11">
+  <div class="pc"><img class="pf" src="images/29.jpg" data-full="images/full/29.jpg" alt="Trastevere"></div>
+  <div class="tx">
+    <div class="cn"><span class="badge">11</span>特拉斯提弗列</div>
+    <div class="nm">Trastevere &nbsp;·&nbsp; <i>Trastevere</i></div>
+    <div class="yr">中世纪</div>
+    <div class="lead">台伯河西岸的老平民区，名字的意思是"河那边"。</div>
+    <p><span class="lbl">它是怎么来的 ·</span> Trastevere 来自拉丁语 trans Tiberim，"越过台伯河"。罗马共和国时期，住在这里的是外邦人、水手、商人和移民 —— 不是罗马公民。它从来不是贵族区。</p>
+    <p><span class="lbl">为什么留到今天 ·</span> 正因为它一直穷，所以一直没被拆。十九世纪末罗马大改造时，别的区被推平重建，这里因为没钱动，巷子原样留了下来。</p>
+    <p><span class="lbl">一段历史 ·</span> 巷子里藏着公元三世纪的圣塞西莉亚地下教堂（Santa Cecilia in Trastevere），还有十二世纪的马赛克立面。今天它是罗马人吃晚饭的地方 —— 天黑以后，石板路上全是小馆子的灯。</p>
+  </div>
+</div>
+<div class="takeaway"><b>如果只记一件事：</b>罗马的伟大不在“保存完整”，而在<b>被反复使用了两千年</b>。万神殿做过神庙、教堂、陵墓；斗兽场做过采石场、修道院；圣天使堡是陵墓、堡垒、监狱、博物馆。<b>罗马不是一座遗址，是一座连续运转了二十七个世纪的城市。</b></div>
+<div class="cands"><h4>备选 · 还有力气就去</h4><div class="note">这些没有排进行程，但都在动线上。看时间和体力临时决定，不需要现在订。</div>
+<div class="cand">
+  <div class="tx2">
+    <div class="cn2"><span class="badge c">12</span>鲜花广场</div>
+    <div class="nm2">Campo de' Fiori &nbsp;·&nbsp; <i>Campo de' Fiori</i> &nbsp;<span class="yr2">中世纪</span></div>
+    <p>白天是菜市场，晚上是酒吧。广场中央那尊戴兜帽的雕像是哲学家布鲁诺（Giordano Bruno）—— 1600 年他因"异端"在这里被烧死，雕像 1889 年才立起来。</p>
+    <p class="win"><b>怎么塞进去 ·</b> 11/21 晚饭前后，从纳沃纳走过去五分钟。</p>
+  </div>
+</div>
+<div class="cand">
+  <div class="tx2">
+    <div class="cn2"><span class="badge c">13</span>圣克莱门特教堂</div>
+    <div class="nm2">Basilica of San Clemente &nbsp;·&nbsp; <i>Basilica di San Clemente</i> &nbsp;<span class="yr2">12 世纪</span></div>
+    <p>一栋楼里三层时间：十二世纪教堂在上面，四世纪教堂在中间，最下面是一座罗马密特拉神庙和一条仍在流水的地下河。买票往下走，可以一直走到公元一世纪。</p>
+    <p class="win"><b>怎么塞进去 ·</b> 11/22 斗兽场之后，步行十分钟，一小时。</p>
+  </div>
+</div>
+<div class="cand">
+  <div class="tx2">
+    <div class="cn2"><span class="badge c">14</span>卡拉卡拉浴场</div>
+    <div class="nm2">Baths of Caracalla &nbsp;·&nbsp; <i>Terme di Caracalla</i> &nbsp;<span class="yr2">217</span></div>
+    <p>公元 217 年启用，能同时容纳一千六百人洗澡、健身、读书。墙高三十米，穹顶的技术后来被文艺复兴重新学了一遍。</p>
+    <p class="win"><b>怎么塞进去 ·</b> 11/22 下午，斗兽场坐车十分钟。</p>
+  </div>
+</div>
+<div class="cand">
+  <div class="tx2">
+    <div class="cn2"><span class="badge c">15</span>平乔山</div>
+    <div class="nm2">Pincio &nbsp;·&nbsp; <i>Pincio</i> &nbsp;<span class="yr2">19 世纪</span></div>
+    <p>博尔盖塞公园西侧的观景台，正对圣彼得穹顶。罗马人傍晚来这里看日落，比西班牙台阶清静得多。</p>
+    <p class="win"><b>怎么塞进去 ·</b> 11/21 博尔盖塞出来往南走十分钟，正好赶日落。</p>
+  </div>
+</div></div>
+
+<h2>四、佛罗伦萨 <span class="en">FLORENCE · 文艺复兴的诞生地</span></h2>
+<p class="lede">佛罗伦萨在十四到十六世纪只有五六万人口，却重新发明了西方艺术的观看方式。
+美第奇家族（Medici）用银行赚来的钱资助艺术家，布鲁内莱斯基算出透视法，马萨乔第一个把"空气"画进画面，
+米开朗基罗二十六岁雕出大卫。文艺复兴的核心不是"复古"，而是"人"第一次成为尺度 ——
+神像有了肌肉、有了情绪、有了重量。你 11/24 下午到、11/25 走，两天正好看"文艺复兴如何开始"和"它最成熟的样子"。</p>
+<div class="mapunit"><div class="maprow"><div class="mapbox"><svg class="cm" viewBox="155.4 -6.5 527.4 692.4" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet"><rect x="0" y="0" width="768" height="768" fill="#f1ece6"/><image x="0" y="0" width="256" height="256" href="images/tiles/florence/15_17407_11943.png"/><image x="0" y="256" width="256" height="256" href="images/tiles/florence/15_17407_11944.png"/><image x="0" y="512" width="256" height="256" href="images/tiles/florence/15_17407_11945.png"/><image x="256" y="0" width="256" height="256" href="images/tiles/florence/15_17408_11943.png"/><image x="256" y="256" width="256" height="256" href="images/tiles/florence/15_17408_11944.png"/><image x="256" y="512" width="256" height="256" href="images/tiles/florence/15_17408_11945.png"/><image x="512" y="0" width="256" height="256" href="images/tiles/florence/15_17409_11943.png"/><image x="512" y="256" width="256" height="256" href="images/tiles/florence/15_17409_11944.png"/><image x="512" y="512" width="256" height="256" href="images/tiles/florence/15_17409_11945.png"/><rect x="0" y="0" width="768" height="768" fill="#ffffff" opacity="0.58"/><g class="pin" data-num="1" data-name="圣母百花大教堂"><circle class="halo" cx="395.8" cy="191.3" r="29.2" fill="#b4573f" opacity="0"/><circle cx="395.8" cy="191.3" r="13.9" fill="#b4573f" stroke="#ffffff" stroke-width="3.0"/><text x="395.8" y="196.0" font-size="13.3" fill="#ffffff" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">1</text></g><g class="pin" data-num="2" data-name="乌菲兹美术馆"><circle class="halo" cx="379.5" cy="362.3" r="29.2" fill="#b4573f" opacity="0"/><circle cx="379.5" cy="362.3" r="13.9" fill="#b4573f" stroke="#ffffff" stroke-width="3.0"/><text x="379.5" y="367.1" font-size="13.3" fill="#ffffff" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">2</text></g><g class="pin" data-num="3" data-name="学院美术馆"><circle class="halo" cx="458.7" cy="68.6" r="29.2" fill="#b4573f" opacity="0"/><circle cx="458.7" cy="68.6" r="13.9" fill="#b4573f" stroke="#ffffff" stroke-width="3.0"/><text x="458.7" y="73.4" font-size="13.3" fill="#ffffff" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">3</text></g><g class="pin" data-num="4" data-name="老桥"><circle class="halo" cx="328.2" cy="359.1" r="29.2" fill="#b4573f" opacity="0"/><circle cx="328.2" cy="359.1" r="13.9" fill="#b4573f" stroke="#ffffff" stroke-width="3.0"/><text x="328.2" y="363.8" font-size="13.3" fill="#ffffff" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">4</text></g><g class="pin" data-num="5" data-name="圣十字教堂"><circle class="halo" cx="542.6" cy="336.5" r="29.2" fill="#b4573f" opacity="0"/><circle cx="542.6" cy="336.5" r="13.9" fill="#b4573f" stroke="#ffffff" stroke-width="3.0"/><text x="542.6" y="341.3" font-size="13.3" fill="#ffffff" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">5</text></g><g class="pin" data-num="6" data-name="皮蒂宫"><circle class="halo" cx="256.0" cy="446.2" r="29.2" fill="#b4573f" opacity="0"/><circle cx="256.0" cy="446.2" r="13.9" fill="#b4573f" stroke="#ffffff" stroke-width="3.0"/><text x="256.0" y="451.0" font-size="13.3" fill="#ffffff" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">6</text></g><g class="pin" data-num="7" data-name="米开朗基罗广场"><circle class="halo" cx="605.5" cy="520.4" r="29.2" fill="#b4573f" opacity="0"/><circle cx="605.5" cy="520.4" r="13.9" fill="#b4573f" stroke="#ffffff" stroke-width="3.0"/><text x="605.5" y="525.2" font-size="13.3" fill="#ffffff" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">7</text></g><g class="pin" data-num="8" data-name="美第奇礼拜堂"><circle class="halo" cx="337.6" cy="123.5" r="25.4" fill="#b4573f" opacity="0"/><circle cx="337.6" cy="123.5" r="12.1" fill="#ffffff" stroke="#b4573f" stroke-width="3.0"/><text x="337.6" y="128.3" font-size="13.3" fill="#b4573f" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">8</text></g><g class="pin" data-num="9" data-name="圣明尼亚托教堂"><circle class="halo" cx="600.9" cy="633.3" r="25.4" fill="#b4573f" opacity="0"/><circle cx="600.9" cy="633.3" r="12.1" fill="#ffffff" stroke="#b4573f" stroke-width="3.0"/><text x="600.9" y="638.1" font-size="13.3" fill="#b4573f" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">9</text></g><g transform="translate(744,27)"><circle r="16.2" fill="#ffffff" opacity="0.85"/><path d="M0,-8.9 L5.6,5.3 L0,2.4 L-5.6,5.3 Z" fill="#7d6a5f"/><text x="0" y="14.0" font-size="10.3" fill="#7d6a5f" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">N</text></g><g><rect x="20.7" y="728.1" width="301.7" height="22.2" fill="#ffffff" opacity="0.8"/><line x1="26.6" y1="744.4" x2="316.5" y2="744.4" stroke="#6b5a50" stroke-width="3.0"/><line x1="26.6" y1="739.9" x2="26.6" y2="748.8" stroke="#6b5a50" stroke-width="1.8"/><line x1="316.5" y1="739.9" x2="316.5" y2="748.8" stroke="#6b5a50" stroke-width="1.8"/><text x="171.5" y="738.5" font-size="10.3" fill="#6b5a50" text-anchor="middle" font-family="Helvetica,Arial">1 km</text></g><text x="759.1" y="761.4" font-size="8.3" fill="#5a5148" text-anchor="end" font-family="Helvetica,Arial" opacity="0.75">© OpenStreetMap contributors</text></svg></div><div class="maplegend"><div class="lg" data-num="1"><span class="badge">1</span>圣母百花大教堂</div><div class="lg" data-num="2"><span class="badge">2</span>乌菲兹美术馆</div><div class="lg" data-num="3"><span class="badge">3</span>学院美术馆</div><div class="lg" data-num="4"><span class="badge">4</span>老桥</div><div class="lg" data-num="5"><span class="badge">5</span>圣十字教堂</div><div class="lg" data-num="6"><span class="badge">6</span>皮蒂宫</div><div class="lg" data-num="7"><span class="badge">7</span>米开朗基罗广场</div><div class="lg" data-num="8"><span class="badge c">8</span>美第奇礼拜堂</div><div class="lg" data-num="9"><span class="badge c">9</span>圣明尼亚托教堂</div></div></div></div>
+<p class="mapnote"><b>红色实心</b>＝行程内的景点，<b>红圈</b>＝备选。数字和下面景点的编号对应。<b>用浏览器打开时，把鼠标移到右边名字上，图上对应的点会亮起</b>（点一下跳到该景点）。地图数据 © OpenStreetMap 贡献者。</p>
+
+<div class="site" id="s1">
+  <div class="pc"><img class="pf" src="images/30.jpg" data-full="images/full/30.jpg" alt="Florence Cathedral"></div>
+  <div class="tx">
+    <div class="cn"><span class="badge">1</span>圣母百花大教堂</div>
+    <div class="nm">Florence Cathedral &nbsp;·&nbsp; <i>Cattedrale di Santa Maria del Fiore</i></div>
+    <div class="yr">1296–1436</div>
+    <div class="lead">一座穹顶，让佛罗伦萨在工程上超过了古罗马。</div>
+    <p><span class="lbl">它是怎么来的 ·</span> 1296 年，建筑师阿诺尔福·迪·坎比奥（Arnolfo di Cambio）动工，要盖一座"比任何教堂都美"的大教堂。中殿 1380 年完工，但留下一个难题：四十多米宽的洞，怎么盖顶？当时没人会。1418 年办竞赛，布鲁内莱斯基（Filippo Brunelleschi）的方案胜出，1420 到 1436 年建成穹顶。</p>
+    <p><span class="lbl">为什么留到今天 ·</span> 它没有塌，是因为布鲁内莱斯基想明白了罗马人的办法：<b>双层壳体</b>、<b>鱼骨形砌砖</b>、<b>不用木架</b>。四百万块砖靠自重咬合，内部有一圈铁链拉紧 —— 到今天仍不需要额外支撑。</p>
+    <p><span class="lbl">一段历史 ·</span> 穹顶跨度 44 米，是罗马之后最大的，直到 1881 年才被超越。外面八条白色大理石肋是标志。洗礼堂那对铜门的浮雕，米开朗基罗看了说"美得可以做天堂之门"（Porta del Paradiso）—— 名字就这么来的。</p>
+  </div>
+</div>
+
+<div class="site" id="s2">
+  <div class="pc"><img class="pf" src="images/31.jpg" data-full="images/full/31.jpg" alt="Uffizi"></div>
+  <div class="tx">
+    <div class="cn"><span class="badge">2</span>乌菲兹美术馆</div>
+    <div class="nm">Uffizi &nbsp;·&nbsp; <i>Galleria degli Uffizi</i></div>
+    <div class="yr">1560 / 1765</div>
+    <div class="lead">本来是美第奇家族的办公楼，后来变成欧洲最早的公共博物馆之一。</div>
+    <p><span class="lbl">它是怎么来的 ·</span> 1560 年，瓦萨里（Giorgio Vasari）替科西莫一世（Cosimo I de' Medici）设计了一排办公楼，把政府各个部门（uffici，意大利语"办公室"）集中到市政广场旁边。家族把艺术收藏放在顶层，慢慢变成了画廊。</p>
+    <p><span class="lbl">为什么留到今天 ·</span> 1743 年，美第奇家族最后一位直系继承人安娜·玛丽亚·路易莎（Anna Maria Luisa de' Medici）签下"家族协定"（Patto di famiglia），把全部收藏留给佛罗伦萨城，条件是一件都不许离开。这份文件是这座美术馆存在的前提。</p>
+    <p><span class="lbl">一段历史 ·</span> 波提切利（Botticelli）的《维纳斯的诞生》（Nascita di Venere）和《春》（Primavera）就在这里 —— 文艺复兴第一次把异教神话画得这么美。看的时候顺着编号走就行：乔托、波提切利、达·芬奇、米开朗基罗、拉斐尔、提香，一代接一代排下去。</p>
+  </div>
+</div>
+
+<div class="site" id="s3">
+  <div class="pc"><img class="pf" src="images/32.jpg" data-full="images/full/32.jpg" alt="Accademia"></div>
+  <div class="tx">
+    <div class="cn"><span class="badge">3</span>学院美术馆</div>
+    <div class="nm">Accademia &nbsp;·&nbsp; <i>Galleria dell'Accademia</i></div>
+    <div class="yr">1501–1504</div>
+    <div class="lead">一座为了一尊雕像而存在的美术馆。</div>
+    <p><span class="lbl">它是怎么来的 ·</span> 米开朗基罗 1501 年回到佛罗伦萨，从一块被前两位雕刻家放弃的大理石里雕出《大卫》（David）。原本是要放在大教堂屋顶上的，但五米多高，搬不上去，就立在市政厅（Palazzo Vecchio）门口 —— 那是共和国的政治宣言：小城也能打倒巨人。</p>
+    <p><span class="lbl">为什么留到今天 ·</span> 1873 年，为了让它别再淋雨，政府把雕像搬进学院美术馆，专门盖了一个带天窗的圆厅（Tribuna）。美术馆本身 1784 年由托斯卡纳大公彼得罗·莱奥波尔多创办，是美术学院的附属馆。</p>
+    <p><span class="lbl">一段历史 ·</span> 看手：大卫的手明显偏大，那是还没长成的少年的手；右手背的血管凸起，因为他正握着石头。<b>别只在正面拍照，绕到后面看背和腿</b>。旁边一排是米开朗基罗未完成的《囚徒》（Prigioni），像从石头里挣扎出来的人。</p>
+  </div>
+</div>
+
+<div class="site" id="s4">
+  <div class="pc"><img class="pf" src="images/33.jpg" data-full="images/full/33.jpg" alt="Ponte Vecchio"></div>
+  <div class="tx">
+    <div class="cn"><span class="badge">4</span>老桥</div>
+    <div class="nm">Ponte Vecchio &nbsp;·&nbsp; <i>Ponte Vecchio</i></div>
+    <div class="yr">1345</div>
+    <div class="lead">二战时德军炸掉了佛罗伦萨所有的桥，唯独没炸这一座。</div>
+    <p><span class="lbl">它是怎么来的 ·</span> 阿诺河上原本有罗马时代的木桥，1333 年一场大洪水把它冲垮。1345 年重建，这次用石头，三个大拱，是欧洲最早的 segmental arch 石桥之一。</p>
+    <p><span class="lbl">为什么留到今天 ·</span> 1944 年 8 月，撤退的德军炸毁了佛罗伦萨所有跨阿诺河的桥，老桥被保留下来 —— 据说是因为希特勒下了命令（也有人说是因为通路被堵住来不及炸）。总之它是今天唯一活着的原桥。</p>
+    <p><span class="lbl">一段历史 ·</span> 桥上原本是肉铺，1593 年费迪南多一世嫌味道难闻，把屠夫赶走，换成了金匠 —— 至今还是金铺。桥上方那条封闭的走廊叫瓦萨里走廊（Corridoio Vasariano），1565 年建的，美第奇家族从市政厅走到宫殿不用下桥、不用闻味道、不用见人。</p>
+  </div>
+</div>
+
+<div class="site" id="s5">
+  <div class="pc"><img class="pf" src="images/34.jpg" data-full="images/full/34.jpg" alt="Santa Croce"></div>
+  <div class="tx">
+    <div class="cn"><span class="badge">5</span>圣十字教堂</div>
+    <div class="nm">Santa Croce &nbsp;·&nbsp; <i>Basilica di Santa Croce</i></div>
+    <div class="yr">1294</div>
+    <div class="lead">意大利的"光荣殿堂"，最伟大的人葬在这里。</div>
+    <p><span class="lbl">它是怎么来的 ·</span> 1294 年，方济各会（Francescani）在城墙外建了这座教堂。方济各会的理念是清贫，所以教堂内部不像大教堂那样华丽，而是开阔、朴素。</p>
+    <p><span class="lbl">为什么留到今天 ·</span> 1966 年 11 月，阿诺河决堤，佛罗伦萨被淹，圣十字教堂进水五米多，泥浆把壁画泡坏了一半。全世界来了志愿者（叫"泥天使"，Angeli del Fango）抢救，很多人是外国学生。</p>
+    <p><span class="lbl">一段历史 ·</span> 米开朗基罗（1564 年下葬于此）、伽利略（1737 年迁葬）、马基雅维利、罗西尼都葬在这里。但丁的墓是空的 —— 他被流放，死在拉文纳，拉文纳至今不肯还他的遗骨。教堂旁边是布鲁内莱斯基设计的帕齐礼拜堂（Cappella dei Pazzi），文艺复兴建筑的原型。</p>
+  </div>
+</div>
+
+<div class="site" id="s6">
+  <div class="pc"><img class="pf" src="images/35.jpg" data-full="images/full/35.jpg" alt="Pitti Palace"></div>
+  <div class="tx">
+    <div class="cn"><span class="badge">6</span>皮蒂宫</div>
+    <div class="nm">Pitti Palace &nbsp;·&nbsp; <i>Palazzo Pitti</i></div>
+    <div class="yr">1458 / 1550</div>
+    <div class="lead">一座"炫富"的宫殿，最后被它的对手买走了。</div>
+    <p><span class="lbl">它是怎么来的 ·</span> 1458 年，银行家卢卡·皮蒂（Luca Pitti）想盖一座比美第奇家更大的房子 —— 他是美第奇的对手。但他后来破产了，房子没盖完。1549 年，美第奇的科西莫一世的老婆埃莱奥诺拉（Eleonora di Toledo）把它买下，成了家族的正式住所。</p>
+    <p><span class="lbl">为什么留到今天 ·</span> 之后它一直是权力的中心：美第奇、洛林王朝、再到 1865 到 1871 年意大利王国定都佛罗伦萨时的王宫。每一任都加了一点自己的东西，所以它今天同时是宫殿、博物馆和花园。</p>
+    <p><span class="lbl">一段历史 ·</span> 后面的波波里花园（Giardino di Boboli）是意大利式园林的范本 —— 从宫殿往山坡上修了一条中轴线，视线被一路引向远处。宫殿里还有服装博物馆（Galleria del Costume）和银器博物馆，人少，值得看。</p>
+  </div>
+</div>
+
+<div class="site" id="s7">
+  <div class="pc"><img class="pf" src="images/36.jpg" data-full="images/full/36.jpg" alt="Piazzale Michelangelo"></div>
+  <div class="tx">
+    <div class="cn"><span class="badge">7</span>米开朗基罗广场</div>
+    <div class="nm">Piazzale Michelangelo &nbsp;·&nbsp; <i>Piazzale Michelangelo</i></div>
+    <div class="yr">1869</div>
+    <div class="lead">一座为了"看城市"而建的广场，是佛罗伦萨最好的告别位置。</div>
+    <p><span class="lbl">它是怎么来的 ·</span> 1865 到 1871 年，佛罗伦萨短暂地是意大利王国的首都，城市要做大规模改造。建筑师朱塞佩·波吉（Giuseppe Poggi）设计了南岸的山坡步道，1869 年在山顶修了这个广场，用米开朗基罗命名。</p>
+    <p><span class="lbl">为什么留到今天 ·</span> 广场中央立着一尊青铜的大卫复制品（1875 年），已经站了一百五十年。它不伟大，但它在这个位置，成了所有照片里佛罗伦萨的封面。</p>
+    <p><span class="lbl">一段历史 ·</span> 从这里能看到完整的穹顶剪影：圣母百花、旧宫塔楼、圣十字、圣明尼亚托教堂（San Miniato al Monte），一层层往后退。十一月日落约在 16:40，提前半小时上去，会看到天从金色变紫。</p>
+  </div>
+</div>
+<div class="takeaway"><b>如果只记一件事：</b>文艺复兴不是“恢复古代”，而是<b>第一次把人的身体当成可以测量的东西</b>。布鲁内莱斯基量罗马废墟算出透视，米开朗基罗解剖尸体雕出血管 —— 你面前的大卫，是一具被算清楚了的人体。</div>
+<div class="cands"><h4>备选 · 还有力气就去</h4><div class="note">这些没有排进行程，但都在动线上。看时间和体力临时决定，不需要现在订。</div>
+<div class="cand">
+  <div class="tx2">
+    <div class="cn2"><span class="badge c">8</span>美第奇礼拜堂</div>
+    <div class="nm2">Medici Chapels &nbsp;·&nbsp; <i>Cappelle Medicee</i> &nbsp;<span class="yr2">1520</span></div>
+    <p>米开朗基罗给美第奇家族设计的新圣器室（Sagrestia Nuova），四尊斜倚的雕像《晨》《昏》《昼》《夜》下面躺着两位早逝的公爵。旁边的王子礼拜堂铺满彩色大理石，是"炫富"的另一种写法。</p>
+    <p class="win"><b>怎么塞进去 ·</b> 11/25 早上，学院美术馆出来步行五分钟。</p>
+  </div>
+</div>
+<div class="cand">
+  <div class="tx2">
+    <div class="cn2"><span class="badge c">9</span>圣明尼亚托教堂</div>
+    <div class="nm2">San Miniato al Monte &nbsp;·&nbsp; <i>San Miniato al Monte</i> &nbsp;<span class="yr2">1018</span></div>
+    <p>佛罗伦萨最古老的罗马式立面，绿色大理石几何图案。传说圣明尼亚托抱着自己的头走到这里才倒下。从米开朗基罗广场再往上走十分钟。</p>
+    <p class="win"><b>怎么塞进去 ·</b> 11/24 看完日落再往上走，正好赶上晚祷的格里高利圣咏。</p>
+  </div>
+</div></div>
+
+<h2>五、米兰 <span class="en">MILAN · 权力、金钱与最后的晚餐</span></h2>
+<p class="lede">米兰在罗马时代叫 Mediolanum，曾是西罗马帝国的首都之一。中世纪它是维斯孔蒂家族（Visconti）的领地，
+十五世纪被斯福尔扎家族（Sforza）接手 —— 达·芬奇和布拉曼特就是被斯福尔扎公爵请来的。
+之后被西班牙、奥地利统治近三百年，1861 年才并入意大利。
+米兰不是"文艺复兴的摇篮"，是"文艺复兴的客户"—— 它用钱把最贵的艺术家请来做事，包括那幅画在食堂墙上的《最后的晚餐》。</p>
+<div class="mapunit"><div class="maprow"><div class="mapbox"><svg class="cm" viewBox="116.0 8.1 672.1 817.0" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet"><rect x="0" y="0" width="1024" height="1024" fill="#f1ece6"/><image x="0" y="0" width="256" height="256" href="images/tiles/milan/15_17218_11726.png"/><image x="0" y="256" width="256" height="256" href="images/tiles/milan/15_17218_11727.png"/><image x="0" y="512" width="256" height="256" href="images/tiles/milan/15_17218_11728.png"/><image x="0" y="768" width="256" height="256" href="images/tiles/milan/15_17218_11729.png"/><image x="256" y="0" width="256" height="256" href="images/tiles/milan/15_17219_11726.png"/><image x="256" y="256" width="256" height="256" href="images/tiles/milan/15_17219_11727.png"/><image x="256" y="512" width="256" height="256" href="images/tiles/milan/15_17219_11728.png"/><image x="256" y="768" width="256" height="256" href="images/tiles/milan/15_17219_11729.png"/><image x="512" y="0" width="256" height="256" href="images/tiles/milan/15_17220_11726.png"/><image x="512" y="256" width="256" height="256" href="images/tiles/milan/15_17220_11727.png"/><image x="512" y="512" width="256" height="256" href="images/tiles/milan/15_17220_11728.png"/><image x="512" y="768" width="256" height="256" href="images/tiles/milan/15_17220_11729.png"/><image x="768" y="0" width="256" height="256" href="images/tiles/milan/15_17221_11726.png"/><image x="768" y="256" width="256" height="256" href="images/tiles/milan/15_17221_11727.png"/><image x="768" y="512" width="256" height="256" href="images/tiles/milan/15_17221_11728.png"/><image x="768" y="768" width="256" height="256" href="images/tiles/milan/15_17221_11729.png"/><rect x="0" y="0" width="1024" height="1024" fill="#ffffff" opacity="0.58"/><g class="pin" data-num="1" data-name="米兰大教堂"><circle class="halo" cx="675.8" cy="376.8" r="38.9" fill="#b4573f" opacity="0"/><circle cx="675.8" cy="376.8" r="18.5" fill="#b4573f" stroke="#ffffff" stroke-width="3.9"/><text x="675.8" y="383.2" font-size="17.7" fill="#ffffff" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">1</text></g><g class="pin" data-num="2" data-name="《最后的晚餐》"><circle class="halo" cx="188.8" cy="320.3" r="38.9" fill="#b4573f" opacity="0"/><circle cx="188.8" cy="320.3" r="18.5" fill="#b4573f" stroke="#ffffff" stroke-width="3.9"/><text x="188.8" y="326.7" font-size="17.7" fill="#ffffff" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">2</text></g><g class="pin" data-num="3" data-name="斯福尔扎城堡"><circle class="halo" cx="412.5" cy="174.1" r="38.9" fill="#b4573f" opacity="0"/><circle cx="412.5" cy="174.1" r="18.5" fill="#b4573f" stroke="#ffffff" stroke-width="3.9"/><text x="412.5" y="180.5" font-size="17.7" fill="#ffffff" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">3</text></g><g class="pin" data-num="4" data-name="布雷拉画廊"><circle class="halo" cx="577.9" cy="111.0" r="38.9" fill="#b4573f" opacity="0"/><circle cx="577.9" cy="111.0" r="18.5" fill="#b4573f" stroke="#ffffff" stroke-width="3.9"/><text x="577.9" y="117.4" font-size="17.7" fill="#ffffff" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">4</text></g><g class="pin" data-num="5" data-name="埃马努埃莱二世拱廊"><circle class="halo" cx="638.5" cy="333.6" r="38.9" fill="#b4573f" opacity="0"/><circle cx="638.5" cy="333.6" r="18.5" fill="#b4573f" stroke="#ffffff" stroke-width="3.9"/><text x="638.5" y="340.0" font-size="17.7" fill="#ffffff" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">5</text></g><g class="pin" data-num="6" data-name="纳维利运河"><circle class="halo" cx="272.7" cy="788.7" r="38.9" fill="#b4573f" opacity="0"/><circle cx="272.7" cy="788.7" r="18.5" fill="#b4573f" stroke="#ffffff" stroke-width="3.9"/><text x="272.7" y="795.1" font-size="17.7" fill="#ffffff" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">6</text></g><g class="pin" data-num="7" data-name="斯卡拉歌剧院"><circle class="halo" cx="626.9" cy="270.5" r="33.9" fill="#b4573f" opacity="0"/><circle cx="626.9" cy="270.5" r="16.1" fill="#ffffff" stroke="#b4573f" stroke-width="3.9"/><text x="626.9" y="276.9" font-size="17.7" fill="#b4573f" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">7</text></g><g class="pin" data-num="8" data-name="二十世纪博物馆"><circle class="halo" cx="643.2" cy="403.4" r="33.9" fill="#b4573f" opacity="0"/><circle cx="643.2" cy="403.4" r="16.1" fill="#ffffff" stroke="#b4573f" stroke-width="3.9"/><text x="643.2" y="409.8" font-size="17.7" fill="#b4573f" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">8</text></g><g class="pin" data-num="9" data-name="圣毛里齐奥教堂"><circle class="halo" cx="375.2" cy="333.6" r="33.9" fill="#b4573f" opacity="0"/><circle cx="375.2" cy="333.6" r="16.1" fill="#ffffff" stroke="#b4573f" stroke-width="3.9"/><text x="375.2" y="340.0" font-size="17.7" fill="#b4573f" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">9</text></g><g transform="translate(992,35)"><circle r="21.7" fill="#ffffff" opacity="0.85"/><path d="M0,-11.8 L7.5,7.1 L0,3.2 L-7.5,7.1 Z" fill="#7d6a5f"/><text x="0" y="18.7" font-size="13.8" fill="#7d6a5f" text-anchor="middle" font-family="Helvetica,Arial" font-weight="700">N</text></g><g><rect x="27.6" y="970.8" width="314.2" height="29.5" fill="#ffffff" opacity="0.8"/><line x1="35.4" y1="992.5" x2="333.9" y2="992.5" stroke="#6b5a50" stroke-width="3.9"/><line x1="35.4" y1="986.6" x2="35.4" y2="998.4" stroke="#6b5a50" stroke-width="2.4"/><line x1="333.9" y1="986.6" x2="333.9" y2="998.4" stroke="#6b5a50" stroke-width="2.4"/><text x="184.7" y="984.6" font-size="13.8" fill="#6b5a50" text-anchor="middle" font-family="Helvetica,Arial">1 km</text></g><text x="1012.2" y="1015.1" font-size="11.0" fill="#5a5148" text-anchor="end" font-family="Helvetica,Arial" opacity="0.75">© OpenStreetMap contributors</text></svg></div><div class="maplegend"><div class="lg" data-num="1"><span class="badge">1</span>米兰大教堂</div><div class="lg" data-num="2"><span class="badge">2</span>《最后的晚餐》</div><div class="lg" data-num="3"><span class="badge">3</span>斯福尔扎城堡</div><div class="lg" data-num="4"><span class="badge">4</span>布雷拉画廊</div><div class="lg" data-num="5"><span class="badge">5</span>埃马努埃莱二世拱廊</div><div class="lg" data-num="6"><span class="badge">6</span>纳维利运河</div><div class="lg" data-num="7"><span class="badge c">7</span>斯卡拉歌剧院</div><div class="lg" data-num="8"><span class="badge c">8</span>二十世纪博物馆</div><div class="lg" data-num="9"><span class="badge c">9</span>圣毛里齐奥教堂</div></div></div></div>
+<p class="mapnote"><b>红色实心</b>＝行程内的景点，<b>红圈</b>＝备选。数字和下面景点的编号对应。<b>用浏览器打开时，把鼠标移到右边名字上，图上对应的点会亮起</b>（点一下跳到该景点）。地图数据 © OpenStreetMap 贡献者。</p>
+
+<div class="site" id="s1">
+  <div class="pc"><img class="pf" src="images/37.jpg" data-full="images/full/37.jpg" alt="Milan Cathedral"></div>
+  <div class="tx">
+    <div class="cn"><span class="badge">1</span>米兰大教堂</div>
+    <div class="nm">Milan Cathedral &nbsp;·&nbsp; <i>Duomo di Milano</i></div>
+    <div class="yr">1386–1965</div>
+    <div class="lead">盖了近六百年，最后那扇门到 1965 年才装上。</div>
+    <p><span class="lbl">它是怎么来的 ·</span> 1386 年，米兰公爵吉安·加莱亚佐·维斯孔蒂（Gian Galeazzo Visconti）下令拆掉旧教堂，盖一座新的 —— 既是信仰，也是权力展示：当时米兰要和罗马、和威尼斯争。</p>
+    <p><span class="lbl">为什么留到今天 ·</span> 它一直没被"拆掉重来"，是因为米兰人把它当城市的身份。拿破仑 1805 年加冕为意大利国王时，掏钱把立面做完了 —— 他说"我要它在二十年内完工"，结果还是拖了一百五十年。专门采石场（Candoglia）至今仍归教堂所有。</p>
+    <p><span class="lbl">一段历史 ·</span> 三千四百座雕像、一百三十五座尖塔。最著名的是屋顶上那尊小金人（Madonnina），1740 年代立起来，后来成了米兰的象征 —— 老规矩说，米兰没有建筑可以高过她。<b>可以买票走楼梯或坐电梯上屋顶</b>，在大理石尖塔之间穿行，这在别的大教堂是做不到的。</p>
+  </div>
+</div>
+
+<div class="site" id="s2">
+  <div class="pc"><img class="pf" src="images/38.jpg" data-full="images/full/38.jpg" alt="The Last Supper"></div>
+  <div class="tx">
+    <div class="cn"><span class="badge">2</span>《最后的晚餐》</div>
+    <div class="nm">The Last Supper &nbsp;·&nbsp; <i>Il Cenacolo Vinciano</i></div>
+    <div class="yr">1495–1498</div>
+    <div class="lead">达·芬奇画在一间修道院食堂墙上的画，差一点就没了。</div>
+    <p><span class="lbl">它是怎么来的 ·</span> 米兰公爵卢多维科·斯福尔扎（Ludovico Sforza）想在家族墓地圣玛利亚感恩教堂（Santa Maria delle Grazie）修一座食堂，请达·芬奇来画后墙。他选了一个非常冒险的办法：不用湿壁画（-affresco），而是自己调干颜料画在干墙上 —— 这样能反复修改，但颜料抓不住墙。"</p>
+    <p><span class="lbl">为什么留到今天 ·</span> 它坏得很快，五十年后就开始剥落。1943 年 8 月，盟军轰炸米兰，教堂的屋顶塌了，这面墙因为提前用沙袋围起来，居然没倒。1980 到 1999 年做了十九年修复，才把画面稳定下来。</p>
+    <p><span class="lbl">一段历史 ·</span> 看的是"说完那句话之后的三秒"：耶稣说"你们中有一个人要出卖我"（Uno di voi mi tradirà），十二个人分成四组，每组三个，所有动作都指向他。<b>每批只放二十五人、十五分钟、不能拍照</b>，所以进门前先看高清图，现场只够确认你看到的是什么。订票时搜 Cenacolo Vinciano，不是 Last Supper。</p>
+  </div>
+</div>
+
+<div class="site" id="s3">
+  <div class="pc"><img class="pf" src="images/39.jpg" data-full="images/full/39.jpg" alt="Sforza Castle"></div>
+  <div class="tx">
+    <div class="cn"><span class="badge">3</span>斯福尔扎城堡</div>
+    <div class="nm">Sforza Castle &nbsp;·&nbsp; <i>Castello Sforzesco</i></div>
+    <div class="yr">1360</div>
+    <div class="lead">维斯孔蒂的堡垒，后来成了斯福尔扎的公爵府，达·芬奇在这里上过班。</div>
+    <p><span class="lbl">它是怎么来的 ·</span> 1358 到 1370 年，维斯孔蒂家族在城墙外修了一座防御堡垒。1450 年，弗朗切斯科·斯福尔扎（Francesco Sforza）夺取米兰后把它改建成了公爵府 —— 从军事设施变成权力中心。</p>
+    <p><span class="lbl">为什么留到今天 ·</span> 它做过奥地利军队的兵营、做过监狱，十九世纪末差点被拆。建筑师卢卡·贝尔特拉米（Luca Beltrami）在二十世纪初主持修复，把它复原成今天的样子。现在是市立博物馆群。</p>
+    <p><span class="lbl">一段历史 ·</span> 达·芬奇在这里画过"木板厅"（Sala delle Asse）的棚架天顶，也设计过城防和水利。城堡里藏着米开朗基罗最后的作品《隆达尼尼圣殇》（Pietà Rondanini）—— 未完成，据说他自己砸过一部分。后面的大公园（Parco Sempione）是米兰人傍晚散步的地方。</p>
+  </div>
+</div>
+
+<div class="site" id="s4">
+  <div class="pc"><img class="pf" src="images/40.jpg" data-full="images/full/40.jpg" alt="Pinacoteca di Brera"></div>
+  <div class="tx">
+    <div class="cn"><span class="badge">4</span>布雷拉画廊</div>
+    <div class="nm">Pinacoteca di Brera &nbsp;·&nbsp; <i>Pinacoteca di Brera</i></div>
+    <div class="yr">1776</div>
+    <div class="lead">一座女王下令办的美术学院，后来成了米兰最重要的画廊。</div>
+    <p><span class="lbl">它是怎么来的 ·</span> 1776 年，奥地利女皇玛丽亚·特蕾莎（Maria Theresa）把一座耶稣会学院改成了美术学院（Accademia di Belle Arti di Brera），附设画廊给学生临摹。米兰当时是奥地利治下的伦巴第首府。</p>
+    <p><span class="lbl">为什么留到今天 ·</span> 拿破仑时代，从各地教堂和修道院没收来的画被集中到这里，藏品一下子变成国家级。它今天仍是学院的一部分 —— 门口还有学生在画速写。</p>
+    <p><span class="lbl">一段历史 ·</span> 曼特尼亚（Mantegna）的《哀悼基督》（Cristo morto）是必看：他从死者的脚底往上看，把人体的透视缩短画到了极致，是文艺复兴最大胆的一个角度。还有拉斐尔的《圣母的婚礼》（Sposalizio della Vergine）、卡拉瓦乔的《以马忤斯的晚餐》。</p>
+  </div>
+</div>
+
+<div class="site" id="s5">
+  <div class="pc"><img class="pf" src="images/41.jpg" data-full="images/full/41.jpg" alt="Galleria Vittorio Emanuele II"></div>
+  <div class="tx">
+    <div class="cn"><span class="badge">5</span>埃马努埃莱二世拱廊</div>
+    <div class="nm">Galleria Vittorio Emanuele II &nbsp;·&nbsp; <i>Galleria Vittorio Emanuele II</i></div>
+    <div class="yr">1867</div>
+    <div class="lead">意大利统一后第一件"国家工程"，用玻璃和铁把两座地标连起来。</div>
+    <p><span class="lbl">它是怎么来的 ·</span> 1861 年意大利统一，米兰想用一座建筑证明自己是新国家的商业中心。建筑师朱塞佩·门戈尼（Giuseppe Mengoni）设计了这座带玻璃拱顶的室内街，1865 到 1877 年建成，用第一位国王维托里奥·埃马努埃莱二世命名。</p>
+    <p><span class="lbl">为什么留到今天 ·</span> 它一直是米兰的"客厅" —— 从十九世纪的有产者到今天的游客，都从这里穿过。二战轰炸后修复，拱顶的玻璃和铁架基本还在。</p>
+    <p><span class="lbl">一段历史 ·</span> 门戈尼在完工前几天从脚手架上摔下来死了，没看到它开门。地面马赛克上有四只动物：都灵的公牛、罗马的母狼、佛罗伦萨的狮子、米兰的母狮。米兰人有个传统 —— 用脚跟踩住公牛那部位转一圈，据说能带来好运（那块地砖已经被踩出一个坑，每年要修）。</p>
+  </div>
+</div>
+
+<div class="site" id="s6">
+  <div class="pc"><img class="pf" src="images/42.jpg" data-full="images/full/42.jpg" alt="Navigli"></div>
+  <div class="tx">
+    <div class="cn"><span class="badge">6</span>纳维利运河</div>
+    <div class="nm">Navigli &nbsp;·&nbsp; <i>Navigli</i></div>
+    <div class="yr">12 世纪</div>
+    <div class="lead">米兰的人工运河，达·芬奇给它设计过水闸。</div>
+    <p><span class="lbl">它是怎么来的 ·</span> 十二世纪起，米兰人挖运河把大理石、粮食和军队运进城。最重要的两条是大运河（Naviglio Grande）和内运河（Naviglio Interno）。十五世纪末，达·芬奇为斯福尔扎公爵设计了一套水闸系统（Conca di San Marco），让船可以在不同水位之间升降 —— 那套原理今天还在用。</p>
+    <p><span class="lbl">为什么留到今天 ·</span> 1930 年代，为了交通和卫生，大部分市中心的运河被填平铺成了马路，只剩大运河和帕维亚运河（Naviglio Pavese）两段。它们活下来，是因为沿岸的作坊和人家一直在用。</p>
+    <p><span class="lbl">一段历史 ·</span> 今天这里是米兰的晚餐区：傍晚灯亮起来，水面反着光，小馆子摆桌子到河边。<b>你 11/26 最后一晚在这里</b>—— 从 Duomo 坐地铁两站，走到运河边，算是给这趟旅行收个尾。</p>
+  </div>
+</div>
+<div class="takeaway"><b>如果只记一件事：</b>米兰的文艺复兴是<b>买来的</b>。斯福尔扎家族用钱把达·芬奇、布拉曼特请来做工程和装饰 —— 所以米兰的伟大不在“孕育”，在“委托”。</div>
+<div class="cands"><h4>备选 · 还有力气就去</h4><div class="note">这些没有排进行程，但都在动线上。看时间和体力临时决定，不需要现在订。</div>
+<div class="cand">
+  <div class="tx2">
+    <div class="cn2"><span class="badge c">7</span>斯卡拉歌剧院</div>
+    <div class="nm2">La Scala &nbsp;·&nbsp; <i>Teatro alla Scala</i> &nbsp;<span class="yr2">1778</span></div>
+    <p>世界上最著名的歌剧院之一，威尔第、托斯卡尼尼都在这里工作过。旁边的博物馆可以走进包厢，从红丝绒座椅后面看空荡的舞台。</p>
+    <p class="win"><b>怎么塞进去 ·</b> 11/26 上午，从拱廊穿过去两分钟。</p>
+  </div>
+</div>
+<div class="cand">
+  <div class="tx2">
+    <div class="cn2"><span class="badge c">8</span>二十世纪博物馆</div>
+    <div class="nm2">Museo del Novecento &nbsp;·&nbsp; <i>Museo del Novecento</i> &nbsp;<span class="yr2">2010</span></div>
+    <p>藏在宫殿里的现代美术馆，最出名的是顶层那排落地窗 —— 正对大教堂的尖塔，是全米兰最好的室内视角。</p>
+    <p class="win"><b>怎么塞进去 ·</b> 11/26 与斯卡拉同一天，就在大教堂广场旁边。</p>
+  </div>
+</div>
+<div class="cand">
+  <div class="tx2">
+    <div class="cn2"><span class="badge c">9</span>圣毛里齐奥教堂</div>
+    <div class="nm2">San Maurizio &nbsp;·&nbsp; <i>San Maurizio al Monastero Maggiore</i> &nbsp;<span class="yr2">1518</span></div>
+    <p>被叫作"米兰的西斯廷"：十六世纪壁画从地板铺到天花板，整个教堂没有一寸空墙，而且免费、几乎没人。</p>
+    <p class="win"><b>怎么塞进去 ·</b> 11/26 从斯福尔扎城堡走过去八分钟。</p>
+  </div>
+</div></div>
+
+<h2 style="page-break-before: always; margin-top: 0;">六、一条总时间轴 <span class="en">THE WHOLE PICTURE</span></h2>
+<table class="timeline">
+<tr><td class="yr">公元前 52</td><td>凯撒征服高卢，巴黎成为罗马的卢泰西亚</td><td class="wh">拉丁区地下</td></tr>
+<tr><td class="yr">公元前 350</td><td>希腊人在尼斯建尼卡亚 Nikaia</td><td class="wh">城堡山</td></tr>
+<tr><td class="yr">公元前 509</td><td>罗马共和国建立</td><td class="wh">古罗马广场</td></tr>
+<tr><td class="yr">公元 80</td><td>斗兽场落成</td><td class="wh">罗马</td></tr>
+<tr><td class="yr">公元 125</td><td>万神殿重建（哈德良）</td><td class="wh">罗马</td></tr>
+<tr><td class="yr">1248</td><td>圣礼拜堂落成</td><td class="wh">巴黎</td></tr>
+<tr><td class="yr">1296</td><td>圣母百花大教堂动工</td><td class="wh">佛罗伦萨</td></tr>
+<tr><td class="yr">1436</td><td>布鲁内莱斯基穹顶完成</td><td class="wh">文艺复兴开始</td></tr>
+<tr><td class="yr">1498</td><td>《最后的晚餐》完成</td><td class="wh">米兰</td></tr>
+<tr><td class="yr">1504</td><td>米开朗基罗《大卫》揭幕</td><td class="wh">佛罗伦萨</td></tr>
+<tr><td class="yr">1512</td><td>西斯廷天顶画完成</td><td class="wh">梵蒂冈</td></tr>
+<tr><td class="yr">1626</td><td>圣彼得大教堂祝圣</td><td class="wh">梵蒂冈</td></tr>
+<tr><td class="yr">1682</td><td>路易十四把宫廷迁往凡尔赛</td><td class="wh">凡尔赛</td></tr>
+<tr><td class="yr">1789</td><td>法国大革命</td><td class="wh">巴黎</td></tr>
+<tr><td class="yr">1853</td><td>豪斯曼改造巴黎</td><td class="wh">今天你看到的巴黎</td></tr>
+<tr><td class="yr">1860</td><td>尼斯由萨伏依割让给法国</td><td class="wh">尼斯</td></tr>
+<tr><td class="yr">1889</td><td>埃菲尔铁塔</td><td class="wh">巴黎</td></tr>
+</table>
+
+<p class="foot">
+  编制于 2026 年 11 月，依据你已确认的行程顺序（巴黎 11/15–19 · 尼斯 11/19–21 · 罗马 11/21–24 · 佛罗伦萨 11/24–25 · 米兰 11/25–27）。<br>
+  打印建议：「实际大小 / 100%」。年代为通行学术断代，不同资料可能略有出入。<br>
+  配图来自 Wikimedia Commons（自由授权），仅用于个人行前阅读。
+</p>
+
+<div id="lb"><img alt=""><div class="cap"></div><div class="hint">点击任意处或按 Esc 关闭</div></div>
+
+<script>
+(function(){
+  var lb=document.getElementById('lb'), im=lb.querySelector('img'), cap=lb.querySelector('.cap');
+  document.addEventListener('click',function(e){
+    var t=e.target;
+    if(t && t.tagName==='IMG' && t.classList.contains('pf')){
+      var card=t.closest('.site')||t.closest('.cand');
+      var q=function(c){var el=card.querySelector(c);return el?el.textContent:'';};
+      im.onerror=function(){im.onerror=null;im.src=t.getAttribute('src');};
+      im.src=t.getAttribute('data-full')||t.getAttribute('src');
+      var nmTxt=(q('.cn')||q('.cn2')).replace(/^\s*\d+\s*/,'');
+      cap.innerHTML='<b>'+nmTxt+'</b><br>'+(q('.nm')||q('.nm2'));
+      lb.classList.add('on'); e.preventDefault();
+    } else if(t===lb||t===im){ lb.classList.remove('on'); }
+  });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape') lb.classList.remove('on'); });
+
+  document.querySelectorAll('.mapunit').forEach(function(u){
+    var svg=u.querySelector('svg.cm');
+    if(!svg) return;
+    function set(n,on){
+      svg.classList.toggle('dim',on);
+      u.querySelectorAll('.pin').forEach(function(p){ p.classList.toggle('hl', on && p.getAttribute('data-num')===n); });
+      u.querySelectorAll('.lg').forEach(function(l){ l.classList.toggle('hl', on && l.getAttribute('data-num')===n); });
+    }
+    u.querySelectorAll('.lg,.pin').forEach(function(el){
+      var touched=false;
+      el.addEventListener('mouseenter',function(){ set(el.getAttribute('data-num'),true); });
+      el.addEventListener('mouseleave',function(){ set(null,false); });
+      el.addEventListener('touchstart',function(){
+        touched=true; set(el.getAttribute('data-num'),true);
+        setTimeout(function(){ set(null,false); },1800);
+      },{passive:true});
+      el.addEventListener('click',function(){
+        if(touched){ touched=false; return; }
+        var c=document.getElementById('s'+el.getAttribute('data-num'));
+        if(!c) return;
+        c.scrollIntoView({behavior:'smooth',block:'center'});
+        c.classList.remove('flash'); void c.offsetWidth; c.classList.add('flash');
+        setTimeout(function(){ c.classList.remove('flash'); },1800);
+      });
+    });
+  });
+})();
+</script>
+
+</body>
+</html>

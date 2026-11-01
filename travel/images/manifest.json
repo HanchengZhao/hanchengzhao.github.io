@@ -1,0 +1,296 @@
+[
+ {
+  "id": "01",
+  "wiki_title": "Eiffel Tower",
+  "file": "images/01.jpg",
+  "kb": 45,
+  "page": "https://en.wikipedia.org/wiki/Eiffel_Tower"
+ },
+ {
+  "id": "02",
+  "wiki_title": "Sainte-Chapelle",
+  "file": "images/02.jpg",
+  "kb": 129,
+  "page": "https://en.wikipedia.org/wiki/Sainte-Chapelle"
+ },
+ {
+  "id": "03",
+  "wiki_title": "Notre-Dame de Paris",
+  "file": "images/03.jpg",
+  "kb": 94,
+  "page": "https://en.wikipedia.org/wiki/Notre-Dame_de_Paris"
+ },
+ {
+  "id": "42",
+  "wiki_title": "Navigli",
+  "file": "images/42.jpg",
+  "kb": 80,
+  "page": "https://en.wikipedia.org/wiki/Navigli"
+ },
+ {
+  "id": "04",
+  "wiki_title": "Thermes de Cluny",
+  "file": "images/04.jpg",
+  "kb": 99,
+  "page": "https://en.wikipedia.org/wiki/Thermes_de_Cluny"
+ },
+ {
+  "id": "05",
+  "wiki_title": "Panthéon",
+  "file": "images/05.jpg",
+  "kb": 80,
+  "page": "https://en.wikipedia.org/wiki/Panth%C3%A9on"
+ },
+ {
+  "id": "06",
+  "wiki_title": "Sacré-Cœur, Paris",
+  "file": "images/06.jpg",
+  "kb": 119,
+  "page": "https://en.wikipedia.org/wiki/Sacr%C3%A9-C%C5%93ur%2C_Paris"
+ },
+ {
+  "id": "07",
+  "wiki_title": "Gare d'Orsay",
+  "file": "images/07.jpg",
+  "kb": 104,
+  "page": "https://en.wikipedia.org/wiki/Gare_d%27Orsay"
+ },
+ {
+  "id": "08",
+  "wiki_title": "Arc de Triomphe",
+  "file": "images/08.jpg",
+  "kb": 64,
+  "page": "https://en.wikipedia.org/wiki/Arc_de_Triomphe"
+ },
+ {
+  "id": "09",
+  "wiki_title": "Louvre",
+  "file": "images/09.jpg",
+  "kb": 45,
+  "page": "https://en.wikipedia.org/wiki/Louvre"
+ },
+ {
+  "id": "10",
+  "wiki_title": "Musée de l'Orangerie",
+  "file": "images/10.jpg",
+  "kb": 95,
+  "page": "https://en.wikipedia.org/wiki/Mus%C3%A9e_de_l%27Orangerie"
+ },
+ {
+  "id": "11",
+  "wiki_title": "Place de la Concorde",
+  "file": "images/11.jpg",
+  "kb": 124,
+  "page": "https://en.wikipedia.org/wiki/Place_de_la_Concorde"
+ },
+ {
+  "id": "12",
+  "wiki_title": "Place Vendôme",
+  "file": "images/12.jpg",
+  "kb": 54,
+  "page": "https://en.wikipedia.org/wiki/Place_Vend%C3%B4me"
+ },
+ {
+  "id": "13",
+  "wiki_title": "Promenade des Anglais",
+  "file": "images/13.jpg",
+  "kb": 95,
+  "page": "https://en.wikipedia.org/wiki/Promenade_des_Anglais"
+ },
+ {
+  "id": "14",
+  "wiki_title": "Nice",
+  "file": "images/14.jpg",
+  "kb": 81,
+  "page": "https://en.wikipedia.org/wiki/Nice"
+ },
+ {
+  "id": "15",
+  "wiki_title": "Nice",
+  "file": "images/15.jpg",
+  "kb": 81,
+  "page": "https://en.wikipedia.org/wiki/Nice"
+ },
+ {
+  "id": "16",
+  "wiki_title": "Èze",
+  "file": "images/16.jpg",
+  "kb": 108,
+  "page": "https://en.wikipedia.org/wiki/%C3%88ze"
+ },
+ {
+  "id": "17",
+  "wiki_title": "Monte Carlo Casino",
+  "file": "images/17.jpg",
+  "kb": 91,
+  "page": "https://en.wikipedia.org/wiki/Monte_Carlo_Casino"
+ },
+ {
+  "id": "18",
+  "wiki_title": "Hotel Negresco",
+  "file": "images/18.jpg",
+  "kb": 115,
+  "page": "https://en.wikipedia.org/wiki/Hotel_Negresco"
+ },
+ {
+  "id": "19",
+  "wiki_title": "Galleria Borghese",
+  "file": "images/19.jpg",
+  "kb": 66,
+  "page": "https://en.wikipedia.org/wiki/Galleria_Borghese"
+ },
+ {
+  "id": "20",
+  "wiki_title": "Spanish Steps",
+  "file": "images/20.jpg",
+  "kb": 116,
+  "page": "https://en.wikipedia.org/wiki/Spanish_Steps"
+ },
+ {
+  "id": "21",
+  "wiki_title": "Trevi Fountain",
+  "file": "images/21.jpg",
+  "kb": 74,
+  "page": "https://en.wikipedia.org/wiki/Trevi_Fountain"
+ },
+ {
+  "id": "22",
+  "wiki_title": "Colosseum",
+  "file": "images/22.jpg",
+  "kb": 87,
+  "page": "https://en.wikipedia.org/wiki/Colosseum"
+ },
+ {
+  "id": "23",
+  "wiki_title": "Roman Forum",
+  "file": "images/23.jpg",
+  "kb": 72,
+  "page": "https://en.wikipedia.org/wiki/Roman_Forum"
+ },
+ {
+  "id": "24",
+  "wiki_title": "Pantheon, Rome",
+  "file": "images/24.jpg",
+  "kb": 109,
+  "page": "https://en.wikipedia.org/wiki/Pantheon%2C_Rome"
+ },
+ {
+  "id": "25",
+  "wiki_title": "Piazza Navona",
+  "file": "images/25.jpg",
+  "kb": 81,
+  "page": "https://en.wikipedia.org/wiki/Piazza_Navona"
+ },
+ {
+  "id": "26",
+  "wiki_title": "Sistine Chapel",
+  "file": "images/26.jpg",
+  "kb": 148,
+  "page": "https://en.wikipedia.org/wiki/Sistine_Chapel"
+ },
+ {
+  "id": "27",
+  "wiki_title": "St. Peter's Basilica",
+  "file": "images/27.jpg",
+  "kb": 75,
+  "page": "https://en.wikipedia.org/wiki/St._Peter%27s_Basilica"
+ },
+ {
+  "id": "28",
+  "wiki_title": "Castel Sant'Angelo",
+  "file": "images/28.jpg",
+  "kb": 102,
+  "page": "https://en.wikipedia.org/wiki/Castel_Sant%27Angelo"
+ },
+ {
+  "id": "29",
+  "wiki_title": "Trastevere",
+  "file": "images/29.jpg",
+  "kb": 85,
+  "page": "https://en.wikipedia.org/wiki/Trastevere"
+ },
+ {
+  "id": "30",
+  "wiki_title": "Florence Cathedral",
+  "file": "images/30.jpg",
+  "kb": 120,
+  "page": "https://en.wikipedia.org/wiki/Florence_Cathedral"
+ },
+ {
+  "id": "31",
+  "wiki_title": "Uffizi",
+  "file": "images/31.jpg",
+  "kb": 101,
+  "page": "https://en.wikipedia.org/wiki/Uffizi"
+ },
+ {
+  "id": "32",
+  "wiki_title": "Galleria dell'Accademia",
+  "file": "images/32.jpg",
+  "kb": 113,
+  "page": "https://en.wikipedia.org/wiki/Galleria_dell%27Accademia"
+ },
+ {
+  "id": "33",
+  "wiki_title": "Ponte Vecchio",
+  "file": "images/33.jpg",
+  "kb": 78,
+  "page": "https://en.wikipedia.org/wiki/Ponte_Vecchio"
+ },
+ {
+  "id": "34",
+  "wiki_title": "Santa Croce, Florence",
+  "file": "images/34.jpg",
+  "kb": 121,
+  "page": "https://en.wikipedia.org/wiki/Santa_Croce%2C_Florence"
+ },
+ {
+  "id": "35",
+  "wiki_title": "Palazzo Pitti",
+  "file": "images/35.jpg",
+  "kb": 100,
+  "page": "https://en.wikipedia.org/wiki/Palazzo_Pitti"
+ },
+ {
+  "id": "36",
+  "wiki_title": "David (Michelangelo)",
+  "file": "images/36.jpg",
+  "kb": 44,
+  "page": "https://en.wikipedia.org/wiki/David_%28Michelangelo%29"
+ },
+ {
+  "id": "37",
+  "wiki_title": "Milan Cathedral",
+  "file": "images/37.jpg",
+  "kb": 106,
+  "page": "https://en.wikipedia.org/wiki/Milan_Cathedral"
+ },
+ {
+  "id": "38",
+  "wiki_title": "The Last Supper (Leonardo)",
+  "file": "images/38.jpg",
+  "kb": 74,
+  "page": "https://en.wikipedia.org/wiki/The_Last_Supper_%28Leonardo%29"
+ },
+ {
+  "id": "39",
+  "wiki_title": "Sforza Castle",
+  "file": "images/39.jpg",
+  "kb": 87,
+  "page": "https://en.wikipedia.org/wiki/Sforza_Castle"
+ },
+ {
+  "id": "40",
+  "wiki_title": "Pinacoteca di Brera",
+  "file": "images/40.jpg",
+  "kb": 126,
+  "page": "https://en.wikipedia.org/wiki/Pinacoteca_di_Brera"
+ },
+ {
+  "id": "41",
+  "wiki_title": "Galleria Vittorio Emanuele II",
+  "file": "images/41.jpg",
+  "kb": 122,
+  "page": "https://en.wikipedia.org/wiki/Galleria_Vittorio_Emanuele_II"
+ }
+]
